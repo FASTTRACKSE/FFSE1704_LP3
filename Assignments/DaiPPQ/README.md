@@ -8,3 +8,4 @@
                 [Bai tap nang cao](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-01/php-asm-01nc.php)
 3. Assigment 2: [php-asm-02](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-02/php-asm-02.php)<br>
                 [php-asm-02nc](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-02/php-asm-02nc.php)
+4. Assigment 3: [php-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-03/shop.php)

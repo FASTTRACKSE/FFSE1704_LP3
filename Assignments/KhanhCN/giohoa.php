@@ -1,5 +1,6 @@
-<?php
+<h1>Giỏ hàng<h1>
 
+<?php
 session_start();
 
 

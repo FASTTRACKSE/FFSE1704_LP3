@@ -23,7 +23,7 @@
 	<form method="post" action="php-asm-03giohang.php">
 		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
 			<tr>
-				<td colspan="2" align="center" bgcolor="#FF9900"><h1 class="style1">Cửa hàng hoa</h1></td>
+				<td colspan="2" align="center" bgcolor="#FF9900"><h2>Cửa hàng hoa</h2></td>
 			</tr>
 			<tr>
 				<td width="111"><strong>ID</strong></td>

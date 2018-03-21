@@ -6,4 +6,4 @@
 <br>
 2. Assigment 2: [2](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/php-asm-02.php)
 <br>
-3. Assigment 3: [3AB](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/php-asm-03ab.php)<br> [3C](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/php-asm-03c.php)
+3. Assigment 3: [3A](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/php-asm-03cuahang.php)<br> [3B](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/php-asm-03giohang.php)

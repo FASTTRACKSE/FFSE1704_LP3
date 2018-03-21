@@ -1,12 +1,12 @@
 <?php
 	// tìm ước số của a, đếm có bao nhiêu
-	$a = 11;
+	$a = 21;
 	$dem = 0;
 
-	echo "Danh sách các ước số của a ($a) là: ";
+	echo "Danh sách các ước số của a ($a) là: <br>";
 	for ($i=1; $i <= $a; $i++) { 
 		if ($a % $i == 0) {
-			echo $i . " ";
+			echo $i . "<br>";
 			$dem += 1;
 		}
 	}

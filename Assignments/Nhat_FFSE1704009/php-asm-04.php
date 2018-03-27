@@ -100,13 +100,13 @@ if(isset($_POST['submit'])){
         	$tmp_name = $_FILES['avatar']['tmp_name'];
 
         	$part = $_SERVER['DOCUMENT_ROOT'];//C:/xampp/htdocs
-        	$part_upload = $part.'/ffse1704_php/images/'.$namenew;
+        	$part_upload = $part.'/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/images/'.$namenew;
 
         	move_uploaded_file($tmp_name, $part_upload);  
             
             //tao phan tu moi cho mang $_POST
             if($name!='false'){
-                $_POST['avatar']=$namenew;
+               $_POST['avatar']=$namenew;
             }else{
                 $_POST['avatar']="";
             }           

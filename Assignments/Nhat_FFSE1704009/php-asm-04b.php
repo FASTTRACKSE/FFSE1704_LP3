@@ -39,7 +39,7 @@
                     <td>  <?= $i ?> </td>
                     <td>  <?= $value['username'] ?> </td>
                     <td>  <?= $value['fullname'] ?> </td>
-                    <td> <img style="width: 50px;height: 50px; padding-left: 20px;" src="<?='http://localhost/ffse1704_php/images/'.$value['avatar'] ?>"/></td>
+                    <td> <img style="width: 50px;height: 50px; padding-left: 20px;" src="<?='http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/images/'.$value['avatar'] ?>"/></td>
                     <td>  <?= $value['gender'] ?> </td>
                     <td>  <?= $value['address'] ?> </td>
                     <td> <a href="">Xoa </a> </td>

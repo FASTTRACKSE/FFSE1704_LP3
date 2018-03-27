@@ -1,0 +1,15 @@
+﻿cau3: INSERT INTO nhanvien(id,name,age,class,gender)
+VALUES('1','Hồ Công Lịnh','19','ffse1701','nam'),('2','Trần Thu Hà','19','ffse1701','Nữ'),
+('3','Trần Thị Tuyết Nhung','19','ffse1701','Nữ'),('4','Trần Nguyên Nam','19','ffse1701','nam'),
+('5','Mai Tuyết Loan','18','ffse1702','Nữ'),('6','Trương Đại Nghĩa','20','ffse1702','Nam'),
+('7','Phạm Quang Nhân','21','ffse1702','Nam'),('8','Bùi Ngọc Quỳnh Nhi','20','ffse1703','Nữ'),
+('9','Nguyễn Minh Huy','22','ffse1704','Nam')
+
+Caua4 : SELECT * FROM `sinhvien` WHERE gender='Nữ' AND age>19
+cau5: SELECT * FROM `sinhvien` WHERE name LIKE '%nam'
+cau6 SELECT COUNT(*) FROM sinhvien WHERE class='ffse1701'
+cau 7 DELETE FROM sinhvien WHERE age<18
+ 
+cau 8 :UPDATE sinhvien SET name= REPLACE(name, 'Nam', 'Trung') WHERE name LIKE '%Nam'
+cau 9
+

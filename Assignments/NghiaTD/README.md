@@ -8,3 +8,4 @@
 2. Assigment 2: [bai2](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-2.php)<br>
 3. Assigment 3: [bai3a](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-03a.php)<br>
 				[bai3b](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-03b.php)<br>
+6. Assigment 5: [bai5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/ffse1704007-asm5.sql)<br>				

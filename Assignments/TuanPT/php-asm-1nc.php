@@ -436,7 +436,7 @@
     
     
     <h2>Giải phương trình bậc hai, 1 ẩn số</h2>
-    <table border="1px" cellpadding="6px" cellspacing="0px"style="width:50%;">
+    <table border="1px" cellpadding="4px" cellspacing="0px"style="width:50%;">
         <tr bgcolor=#cccccc>
             <th style="text-align: center;">TT</th>
             <th style="text-align: right;">a</th>
@@ -445,6 +445,7 @@
             <th style="text-align: right;">x1</th>
             <th style="text-align: right;">x2</th>
             <th style="text-align: center;">Ghi chú</th>
+            <th style="text-align: center;">Chức năng</th>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t1?></td>
@@ -454,6 +455,7 @@
              <td style="text-align: right;"><p><?=$x11 ?></p></td>
             <td style="text-align: right;"><p><?=$x21?></p></td>
              <td style="text-align: left;"><p><?=$y11?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t2?></td>
@@ -463,6 +465,7 @@
              <td style="text-align: right;"><p><?=$x12?></p></td>
             <td style="text-align: right;"><p><?= $x22?></p></td>
              <td style="text-align: left;"><p><?=$y12?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t3?></td>
@@ -472,6 +475,7 @@
              <td style="text-align: right;"><p><?=$x13?></p></td>
             <td style="text-align: right;"><p><?= $x23?></p></td>
              <td style="text-align: left;"><p><?=$y13?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t4?></td>
@@ -481,6 +485,7 @@
              <td style="text-align: right;"><p><?=$x14?></p></td>
             <td style="text-align: right;"><p><?= $x24?></p></td>
              <td style="text-align: left;"><p><?=$y14?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t5?></td>
@@ -490,6 +495,7 @@
              <td style="text-align: right;"><p><?=$x15?></p></td>
             <td style="text-align: right;"><p><?= $x25?></p></td>
              <td style="text-align: left;"><p><?=$y15?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t6?></td>
@@ -499,6 +505,7 @@
              <td style="text-align: right;"><p><?=$x16?></p></td>
             <td style="text-align: right;"><p><?= $x26?></p></td>
              <td style="text-align: left;"><p><?=$y16?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t7?></td>
@@ -508,6 +515,7 @@
              <td style="text-align: right;"><p><?=$x17?></p></td>
             <td style="text-align: right;"><p><?= $x27 ?></p></td>
              <td style="text-align: left;"><p><?=$y17?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t8?></td>
@@ -517,6 +525,7 @@
              <td style="text-align: right;"><p><?=$x18?></p></td>
             <td style="text-align: right;"><p><?= $x28 ?></p></td>
              <td style="text-align: left;"><p><?=$y18?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t9?></td>
@@ -526,6 +535,7 @@
              <td style="text-align: right;"><p><?=$x19?></p></td>
             <td style="text-align: right;"><p><?= $x29 ?></p></td>
              <td style="text-align: left;"><p><?=$y19?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
         <tr>
             <td style="text-align: center;"><?=$t10?></td>
@@ -535,8 +545,21 @@
              <td style="text-align: right;"><p><?=$x110?></p></td>
             <td style="text-align: right;"><p><?= $x210 ?></p></td>
              <td style="text-align: left;"><p><?=$y110?></p></td>
+            <td style="text-align: center;"><a href="#" class="delete">Xóa</a></td>
         </tr>
     </table>
 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>	
+			$('.delete').click(function(){
+				
+				var cf=  confirm("Bạn có muốn xóa dòng này hay không???");
+				if(cf==true){
+					$(this).parent().parent().remove();
+				}
+			
+			})
+		</script>
 </body>
 

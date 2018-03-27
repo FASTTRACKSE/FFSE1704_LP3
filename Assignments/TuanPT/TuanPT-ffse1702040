@@ -1,0 +1,161 @@
+-- phpMyAdmin SQL Dump
+-- version 4.4.15.9
+-- https://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 26, 2018 at 08:48 AM
+-- Server version: 5.6.37
+-- PHP Version: 5.6.31
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `TuanPT-ffse1702040`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hoadon`
+--
+
+CREATE TABLE IF NOT EXISTS `hoadon` (
+  `MaHD` int(11) NOT NULL,
+  `MaKH` int(11) NOT NULL,
+  `MaSP` int(11) NOT NULL,
+  `MaNV` int(11) NOT NULL,
+  `Ngaylap` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `khachhang`
+--
+
+CREATE TABLE IF NOT EXISTS `khachhang` (
+  `MaKH` int(11) NOT NULL,
+  `TenKH` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `DiaChi` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `NgaySinh` date NOT NULL,
+  `GioiTinh` char(4) COLLATE utf8_unicode_ci NOT NULL,
+  `SoDT` char(12) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `nhanvien`
+--
+
+CREATE TABLE IF NOT EXISTS `nhanvien` (
+  `MaNV` int(15) NOT NULL,
+  `TenNV` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `DiaChi` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `NgaySinh` date NOT NULL,
+  `GioiTinh` bit(1) NOT NULL,
+  `SoDT` tinyint(12) NOT NULL,
+  `PhongBan` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `ChucVu` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `phieudatmua`
+--
+
+CREATE TABLE IF NOT EXISTS `phieudatmua` (
+  `MaPhieuDat` int(11) NOT NULL,
+  `MaKH` int(11) NOT NULL,
+  `MaNV` int(11) NOT NULL,
+  `NgayLap` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sanpham`
+--
+
+CREATE TABLE IF NOT EXISTS `sanpham` (
+  `MaSP` int(11) NOT NULL,
+  `TenSP` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `Hangsx` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `MoTa` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `DonGia` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `hoadon`
+--
+ALTER TABLE `hoadon`
+  ADD PRIMARY KEY (`MaHD`);
+
+--
+-- Indexes for table `khachhang`
+--
+ALTER TABLE `khachhang`
+  ADD PRIMARY KEY (`MaKH`);
+
+--
+-- Indexes for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  ADD PRIMARY KEY (`MaNV`);
+
+--
+-- Indexes for table `phieudatmua`
+--
+ALTER TABLE `phieudatmua`
+  ADD PRIMARY KEY (`MaPhieuDat`);
+
+--
+-- Indexes for table `sanpham`
+--
+ALTER TABLE `sanpham`
+  ADD PRIMARY KEY (`MaSP`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `hoadon`
+--
+ALTER TABLE `hoadon`
+  MODIFY `MaHD` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `khachhang`
+--
+ALTER TABLE `khachhang`
+  MODIFY `MaKH` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  MODIFY `MaNV` int(15) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `phieudatmua`
+--
+ALTER TABLE `phieudatmua`
+  MODIFY `MaPhieuDat` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `sanpham`
+--
+ALTER TABLE `sanpham`
+  MODIFY `MaSP` int(11) NOT NULL AUTO_INCREMENT;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

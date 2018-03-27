@@ -1,36 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Assignment PHP 3d</title>
-</head>
-<body>
-	<?php
-			session_start();
-			 $_SESSION['tenhoa'] = $_POST['tenhoa'];
-			 $_SESSION['dongia'] = $_POST['dongia'];
-			 $_SESSION['soluong'] = $_POST['soluong'];
-			
+<h1>Giỏ hàng<h1>
+<?php
+	session_start();
 
-			$tong= 0;
-			$tong =($_POST['soluong']*$_POST['dongia']);
-			
-		
-	?>
-	<form method="post" action="">
-		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
-			<tr>
-				<th  colspan="2" style="float: left; color: red;" ><h1 class="style1">Giỏ Hàng</h1></th>
-			</tr>
-			<tr>
-				
-				<td><strong>Tên Hoa:<br> <?php echo $_SESSION['tenhoa']; ?></strong></td>
-				<td><strong>Số lượng:<br><?php echo $_SESSION['soluong'];?></strong></td>
-				<td><strong>Đơn Giá:<br> <?php echo $_SESSION['dongia'];?></strong></td>
-				<td><strong>Tổng:<br> <?php echo $tong;?> </strong></td>
-			</tr>
-			
-		</table>
-	</form>
-</body>
-</html>
+	echo "<table cellspacing=\"0\">
+			<tr style=\"background: #dfdfdf\">
+				<th style=\"width:120px\">Tên sản phẩm </th>
+				<th style=\"width:80px\">Giá</th>
+				<th style=\"width:150px\">Số lương</th>
+				<th style=\"width:80px\">Tổng tiền</th>
+				<th style=\"width:150px\">Chức năng</th>
+			</tr>";
+
+	$Tong=0;
+	$tonggia = 0 ;
+
+	foreach($_SESSION['giohang'] as $key => $value){
+	
+		$Tong=($value['soluong']*$value['dongia']);
+		$tonggia +=$Tong;
+	
+		echo "<tr style=\"text-align: center; \">";
+		echo  "<td style = 'color:red'>" .$value['tenhoa']."</td>";
+		echo  "<td>" .$value['dongia']."</td>";
+		echo  "<td>" .$value['soluong']. "</td>";
+		echo "<td>" .$Tong. "</td>";
+		echo "<td><a href=\"delete.php\" >Xoa</a></td>";	
+		echo "</tr>";
+
+	}
+
+	echo"<table>"; 
+	echo "<h3>Thành tiền: $tonggia đ</h3>";
+
+	unset($_SESSION['giohang'][1]);
+?>
+<td><a href="shop.php">Trở về</a></td>
+
+<?php
+	echo("<pre>");
+	print_r($_SESSION);
+	echo "<pre>";
+?>

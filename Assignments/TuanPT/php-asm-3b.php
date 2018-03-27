@@ -1,7 +1,7 @@
 <?php
   $S=" ";
   $R=" ";
-if(isset($_POST['R'])){
+if(isset($_POST['submit'])){
     $R=$_POST['R'];
     define("pi",3.14);
     $S=pi*pow($R,2);
@@ -27,5 +27,5 @@ if(isset($_POST['R'])){
 				<input type="submit" name="submit" value="Submit">
 				</label></td>
 			</tr>
-    </table>
+    </table>    
 </form>

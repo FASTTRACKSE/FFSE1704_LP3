@@ -3,3 +3,4 @@
 6: SELECT COUNT(*) FROM `SinhVien` WHERE Class='FFSE1701'
 7: DELETE * FROM `SinhVien` WHERE age<18
 nc1: UPDATE sinhvien SET Name = REPLACE(name,'Nam','Trung') WHERE Name LIKE'%Nam'
+nc2: SELECT * FROM sinhvien ORDER BY age DESC LIMIT 3

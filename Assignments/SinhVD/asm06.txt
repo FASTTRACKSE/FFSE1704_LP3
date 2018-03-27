@@ -1,0 +1,5 @@
+INSERT INTO ffse1704010_asm_06(id,name,age,class,gender) VALUES('1','H? CÔNG L?NH','19','ffse1701','nam'),('2','Tr?n Thu hà','19','ffse1701','n?'),('3','Tr?n Th? Tuy?t Nhung','19','ffse1701','n?'),('4','Tr?n Nguy?n Nam','19','ffse1701','nam'),('5','Mai Tuy?t Loan','18','ffse1702','n?'),('6','Trýõng ð?i ngh?a ','20','ffse1702','nam'),('7','ph?m quang nhân ','21','ffse1701','nam'),('8','bùi ng?c qu?nh nhi','20','ffse1703','n?'),('9','nguy?n minh huy','22','ffse1704','nam')
+bai 4:SELECT * FROM `ffse1704010_asm_06` WHERE gender= 'n?' AND age>'19'
+bai 5:SELECT * FROM `ffse1704010_asm_06` WHERE name LIKE '%nam'
+bai 6:SELECT COUNT(*) FROM `ffse1704010_asm_06` WHERE class='FFSE1701'
+bai 7:DELETE FROM `ffse1704010_asm_06` WHERE age<'18'

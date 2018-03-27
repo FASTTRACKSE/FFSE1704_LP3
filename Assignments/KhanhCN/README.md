@@ -25,8 +25,8 @@
 (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/home.php)
 (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/dangxuat.php)
 
-[Bài 10](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/formmuahoa.php)
-(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/giohoa.php)
+[Bài 10](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/php-asm-03a.php)
+(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/php-asm-03.php)
 
 
 [Bài 11](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/php-asm-04.php)

@@ -28,3 +28,4 @@ Nâng cao:
 Câu 1:
 UPDATE sinhvien SET Name=REPLACE(Name,"Nam","Trung") WHERE Name LIKE "%Nam"
 Câu 2:
+SELECT * FROM sinhvien ORDER BY `Age` DESC LIMIT 3

@@ -17,6 +17,8 @@
 
 5.Assigment 5:
 [Mã SV](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/TuanPT-ffse1702040)
+
 6.Assignment 6:
-[Mã SV](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/SQL1)
+[Sinh viên](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/SQL1)
+
 6.Assignment 7:

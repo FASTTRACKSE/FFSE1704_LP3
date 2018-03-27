@@ -1,0 +1,4 @@
+﻿4: SELECT * FROM `SinhVien` WHERE Gender = 'Nữ' AND age > '19'
+5: SELECT * FROM `SinhVien` WHERE Name LIKE '%Nam'
+6: SELECT COUNT(*) FROM `SinhVien` WHERE Class='FFSE1701'
+7: DELETE * FROM `SinhVien` WHERE age<18

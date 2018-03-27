@@ -11,5 +11,7 @@ cau6 SELECT COUNT(*) FROM sinhvien WHERE class='ffse1701'
 cau 7 DELETE FROM sinhvien WHERE age<18
  
 cau 8 :UPDATE sinhvien SET name= REPLACE(name, 'Nam', 'Trung') WHERE name LIKE '%Nam'
-cau 9
+cau 9 SELECT * FROM sinhvien
+ORDER BY age DESC
+LIMIT 3
 

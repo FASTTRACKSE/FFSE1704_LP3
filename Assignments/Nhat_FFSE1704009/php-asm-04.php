@@ -2,75 +2,119 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Assignment PHP 4</title>
+	<title>Assignment 4</title>
+	<style type="text/css">
+  table {
+      border-collapse: collapse;
+  }
+  table tr td,
+  th {
+   border: 1px solid black;
+   padding: 10px;
+   padding-right: 100px;
+}
+table th {
+   text-align: left;
+}
+table tr:first-child {
+   background: #d6d5d5;
+}
+</style>
 </head>
 <body>
-	
-
-	<form method="post" action="php-asm-04b.php" enctype="multipart/form-data">
-		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
-			<tr>
-				<td colspan="2" align="center" bgcolor="#FF9900"><h1 class="style1">Phiếu Đăng Nhập </h1></td>
-			</tr>
-			<tr>
-				<td width="111"><strong>Tên Đăng Nhập </strong></td>
-				<td width="379">
-				<input name="name" type="text"  value="" >
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Mật Khẩu</strong></td>
-				<td width="379">
-				<input name="pass" type="password"  value="" >
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Họ và tên</strong></td>
-				<td width="379">
-				<input name="hoten" type="text"  value=" " >
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Ảnh đại diện </strong></td>
-				<td width="379">
-				<input name="0410DT" type="file"  value="" >
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Địa chỉ </strong></td>
-				<td width="379">
-				<select name="diachi" >
-					<option value="Hà Nội">Hà Nội</option>
-					<option value="Thanh Hóa">Thanh Hóa</option>
-					<option value="Đà Nẵng">Đà Nẵng</option>
-					<option value="TP.HCM">TP.HCM</option>
-				</select>
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Giới tính</strong></td>
-				<td width="379">
-				<select name="gioitinh" >
-					<option value="Nam">Nam</option>
-					<option value="Nữ">Nữ</option>
-				</select>
-				</td>
-			</tr>
-			<tr>
-				<td><strong>Sở thích </strong></td>
-				<td width="379">
-				<input name="xem phim" type="checkbox"  value=" " >Xem Phim<br>
-				<input name="xemphim" type="checkbox"  value=" " >Nghe Nhạc<br>
-				<input name="docbao" type="checkbox"  value=" " >Đọc Báo<br>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center"><label>
-				<input type="submit" name="post" value="Thực Hiện">
-				<input type="reset" name="cancer" value="hủy">
-				</label></td>
-			</tr>
-		</table>
-	</form>
+    <form method="POST" enctype="multipart/form-data">
+        <table>
+            <tr >
+                <th colspan="2">Đăng ký tài khoản</th>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập (*)</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu (*)</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Họ và tên (*)</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Ảnh đại diện (*)</td>
+                <td><input type="file" name="avatar" value="Chọn tệp"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <select name="address">
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" checked>Nam<br>
+                    <input type="radio" name="gender" value="Nữ">Nữ<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" value="Xem phim" name="favorite[]" checked>Xem phim<br>
+                    <input type="checkbox"  value="Nghe nhạc" name="favorite[]">Nghe nhạc<br>
+                    <input type="checkbox" value="Đọc báo" name="favorite[]">Đọc báo
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Xác nhận"> 
+                    <input type="reset" name="cancel" value="Hủy bỏ">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
+<?php 
+session_start();
+  
+
+if(isset($_POST['submit'])){
+    $namefile='avatar';
+    $username= $_POST['username'];
+    $password=$_POST['password'];
+    $fullname=$_POST['fullname'];
+    $address=$_POST['address'];
+    $gender=$_POST['gender'];
+    $favorite=$_POST['favorite'];
+   
+            $name = $_FILES['avatar']['name'];
+        	
+        	$arname = explode('.', $name);
+        	$duoifile = end($arname);
+        	$newname = time();
+        	$namenew = $newname.'.'.$duoifile;
+        	$tmp_name = $_FILES['avatar']['tmp_name'];
+
+        	$part = $_SERVER['DOCUMENT_ROOT'];//C:/xampp/htdocs
+        	$part_upload = $part.'/ffse1704_php/images/'.$namenew;
+
+        	move_uploaded_file($tmp_name, $part_upload);  
+            
+            //tao phan tu moi cho mang $_POST
+            if($name!='false'){
+                $_POST['avatar']=$namenew;
+            }else{
+                $_POST['avatar']="";
+            }           
+            //Them phan tu vao session
+            $_SESSION[$username]=$_POST;
+            
+           
+            header("location: php-asm-04b.php");
+        
+    }
+    ?>

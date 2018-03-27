@@ -13,3 +13,5 @@
 <br>
 5. Assigment 5: [5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/FFSE1704009_mysql_01.sql)
 <br>
+6. Assigment 6: [6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/Assignment_MySQL_02.txt)<br>(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/FFSE1704009_mysql_01.sql)
+<br>

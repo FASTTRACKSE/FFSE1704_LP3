@@ -1,0 +1,24 @@
+câu 3:
+INSERT INTO `sinhvien` (`id`, `name`, `age`, `class`, `gender`) VALUES
+(1, 'hồ công linh', 19, 'ffse1701', 'nam'),
+(2, 'trần thu hà', 19, 'ffse1701', 'nữ'),
+(3, 'trần thị tuyết nhung', 19, 'ffse1701', 'nữ'),
+(4, 'trần nguyễn nam', 19, 'ffse1701', 'nam'),
+(5, 'nguyễn tuyết loan', 18, 'ffse1702', 'nữ'),
+(6, 'trương đại nghĩa', 20, 'ffse1702', 'nam'),
+(7, 'phạm quang nhân', 21, 'ffse1702', 'nam'),
+(8, 'bù ngọc quỳnh nhi', 20, 'ffse1703', 'nữ'),
+(9, 'nguyễn minh huy', 22, 'ffse1704', 'nam');
+câu 4:
+SELECT * FROM sinhvien WHERE Gender = "Nữ" AND Age > '19';
+
+câu 5:
+SELECT *
+FROM sinhvien
+WHERE Name LIKE N'% Nam'
+
+câu 6:
+SELECT COUNT(*) FROM sinhvien WHERE Class='FFSE1701'
+
+câu 7:
+DELETE FROM sinhvien WHERE Age<'18'

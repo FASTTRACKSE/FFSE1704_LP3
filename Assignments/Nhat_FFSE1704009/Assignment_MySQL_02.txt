@@ -2,3 +2,4 @@
 5: SELECT * FROM `SinhVien` WHERE Name LIKE '%Nam'
 6: SELECT COUNT(*) FROM `SinhVien` WHERE Class='FFSE1701'
 7: DELETE * FROM `SinhVien` WHERE age<18
+nc1: UPDATE sinhvien SET Name = REPLACE(name,'Nam','Trung') WHERE Name LIKE'%Nam'

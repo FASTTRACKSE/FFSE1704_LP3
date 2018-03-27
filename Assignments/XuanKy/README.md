@@ -10,3 +10,5 @@
 [Bài 3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/XuanKy/php-asm-03.php)
 [Bài 3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/XuanKy/php-asm-03-shop.php)
 [Bài 5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/XuanKy/ffse1701005.sql)
+[Bài 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/XuanKy/sinhvien.sql)
+[Bài 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/XuanKy/sql-asm-02.sql)

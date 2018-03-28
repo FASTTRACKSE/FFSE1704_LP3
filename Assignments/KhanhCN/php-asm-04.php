@@ -90,31 +90,52 @@ if(isset($_POST['submit'])){
     $address=$_POST['address'];
     $gender=$_POST['gender'];
     $favorite=$_POST['favorite'];
-   
-            $name = $_FILES['avatar']['name'];
-        	
-        	$arname = explode('.', $name);
-        	$duoifile = end($arname);
-        	$newname = time();
-        	$namenew = $newname.'.'.$duoifile;
-        	$tmp_name = $_FILES['avatar']['tmp_name'];
+    $mess=array();
 
-        	$part = $_SERVER['DOCUMENT_ROOT'];//C:/xampp/htdocs
-        	$part_upload = $part.'/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/images/'.$namenew;
-
-        	move_uploaded_file($tmp_name, $part_upload);  
+        //validation
+    if(empty($username)){
+        $mess[]="Vui long nhap username";
+    }
+    if(empty($password)){
+        $mess[]="Vui long nhap password";
+    }
+    if(empty($fullname)){
+        $mess[]="Vui long nhap fullname";
+    }
+    if(empty($address)){
+        $mess[]="Vui long nhap address";
+    }
+    if(empty($gender)){
+        $mess[]="Vui long chon gender";
+    }
+    if(count($favorite)==0){
+        $mess[]="Vui long chon favorite";
+    }
+    if(empty($_FILES['avatar']['name'])){
+        $mess[]="Vui long chon avatar";
+    }
+        if(count($mess)==0){//ko co loi 
+            //upload file
+            $name= $_FILES['avatar']['name'];
+            $tmp_name= $_FILES['avatar']['tmp_name'];
+            //Lấy đường dẫn góc của host
+            $path_root = $_SERVER['DOCUMENT_ROOT'];//C:/htdocs
+            //Tạo đường dẫn đầy đủ để upload file
+            $path_upload= $path_root.'/lab2.1/image/'.$name;
+            //Thực hiện úp upload files lên host
+            move_uploaded_file($tmp_name, $path_upload);  
             
             //tao phan tu moi cho mang $_POST
             if($name!='false'){
-               $_POST['avatar']=$namenew;
+                $_POST['avatar']=$name;
             }else{
                 $_POST['avatar']="";
             }           
             //Them phan tu vao session
             $_SESSION[$username]=$_POST;
             
-           
-            header("location: php-asm-04b.php");
-        
+            //chuyen huong qua trang danhsach
+            header("location: danhsach.php");
+        }
     }
     ?>

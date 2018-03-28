@@ -16,4 +16,4 @@
 4.Assigment 5:
 [Bài 5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass5/ass5-bt5.sql)
 5.Assigment 6:
-
+[Bài 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass6/ass6-bt6.sql)

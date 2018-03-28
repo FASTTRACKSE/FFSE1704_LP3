@@ -6,6 +6,7 @@
 		isset($_POST["soluong"]) || 
 		isset($_POST["dongia"])
 	){
+		
 		$id = $_POST['id'];
 		$tenhoa = $_POST['tenhoa'];
 		$soluong = $_POST['soluong'];
@@ -18,7 +19,8 @@
 				'id' => $id,
 				'tenhoa' => $tenhoa,
 				'soluong' => $soluong,
-				'dongia' => $dongia
+				'dongia' => $dongia,
+				'anh' => $anh
 			);
 		}
 		header("location: basket.php");
@@ -31,7 +33,7 @@
 		<title></title>
 	</head>
 	<body>
-		<form action='' method="POST"  style="background:#c6edec; width:250px; " >
+		<form action='' method="POST"  style="background:#c6edec; width:250px; " enctype="multipart/form-data" >
       		<h2 style= "background:#00a19b; width:240px; color:white; padding-left:10px"; >Cửa hàng Sunflower</h2>
     		Id hoa:</br> 
     		<input type="text" name="id"> <br/><br/>

@@ -11,3 +11,4 @@
 4. Assigment 3: [php-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-03/shop.php)
 5. Assigment 4: [php-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-04/php-asm-04.php)
 6. Assigment 5: [php-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-05/ffse1704002_mysql_01.sql)
+7. Assigment 6: [php-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-05/ffse1704002_mysql_02.sql)

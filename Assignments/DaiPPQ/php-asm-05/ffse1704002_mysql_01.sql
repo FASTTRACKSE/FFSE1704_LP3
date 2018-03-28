@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 28, 2018 lúc 07:34 AM
+-- Thời gian đã tạo: Th3 28, 2018 lúc 09:12 AM
 -- Phiên bản máy phục vụ: 10.1.30-MariaDB
 -- Phiên bản PHP: 7.2.2
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `hoadon` (
-  `MaHD` char(10) NOT NULL,
-  `MaKH` char(15) NOT NULL,
-  `MaSP` char(10) NOT NULL,
-  `MaNV` char(10) NOT NULL,
+  `MaHD` char(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MaKH` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MaSP` char(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MaNV` char(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `NgayLap` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -43,12 +43,12 @@ CREATE TABLE `hoadon` (
 --
 
 CREATE TABLE `khachhang` (
-  `MaKH` char(15) NOT NULL,
-  `TenKH` varchar(50) NOT NULL,
-  `DiaChi` varchar(50) NOT NULL,
+  `MaKH` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `TenKH` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `DiaChi` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `NgaySinh` date NOT NULL,
-  `GioiTinh` char(4) NOT NULL,
-  `SoDT` char(12) NOT NULL
+  `GioiTinh` char(4) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `SoDT` char(12) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -58,14 +58,14 @@ CREATE TABLE `khachhang` (
 --
 
 CREATE TABLE `nhanvien` (
-  `MaNV` char(15) NOT NULL,
-  `TenNV` varchar(50) NOT NULL,
-  `DiaChi` varchar(50) NOT NULL,
+  `MaNV` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `TenNV` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `DiaChi` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `NgaySinh` date NOT NULL,
-  `GioiTinh` char(4) NOT NULL,
-  `SoDT` char(12) NOT NULL,
-  `PhongBan` varchar(50) NOT NULL,
-  `ChucVu` varchar(50) NOT NULL
+  `GioiTinh` char(4) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `SoDT` char(12) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `PhongBan` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `ChucVu` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -75,9 +75,9 @@ CREATE TABLE `nhanvien` (
 --
 
 CREATE TABLE `phieudatmua` (
-  `MaPhieuDat` char(15) NOT NULL,
-  `MaKH` char(15) NOT NULL,
-  `MaNV` char(15) NOT NULL,
+  `MaPhieuDat` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MaKH` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MaNV` char(15) CHARACTER SET utf8 COLLATE utf8_unicode_520_ci NOT NULL,
   `NgayLap` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -88,10 +88,10 @@ CREATE TABLE `phieudatmua` (
 --
 
 CREATE TABLE `sanpham` (
-  `MaSP` char(10) NOT NULL,
-  `TenSP` varchar(50) NOT NULL,
-  `HangSX` varchar(50) NOT NULL,
-  `MoTa` varchar(30) NOT NULL,
+  `MaSP` char(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `TenSP` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `HangSX` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `MoTa` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `DonGia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 COMMIT;

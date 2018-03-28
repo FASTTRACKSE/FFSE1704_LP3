@@ -22,6 +22,5 @@
 6.Assignment 6:
 [Sinh viên](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/SQL1)<br>
 
-7.Assignment 7:
-[Mã sinh viên]:
-(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/masinhvien)<br>
+6.Assignment 6:
+[Mã sinh viên](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/masinhvien)<br>

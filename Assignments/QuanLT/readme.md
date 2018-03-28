@@ -7,4 +7,4 @@
 3. Assignment 2: [Assignment 2](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_PHP2.php)
 4. Assignment 4: [Assignment 3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_PHP3.php)
 5. Assignment 5: [Assignment 4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_PHP4.php)
-6. Assignment 6: [Assignment 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_SQL1.sql)
+6. Assignment 6: [Assignment 5 SQL](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_SQL1.sql)

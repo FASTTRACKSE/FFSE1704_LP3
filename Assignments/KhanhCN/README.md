@@ -35,7 +35,8 @@
 
 
 [Bài 12](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-05.php)
-(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-06.php)
+
+[Bài 13](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-06.php)
 
 
 

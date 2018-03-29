@@ -10,12 +10,12 @@
 
 	<?php
 		$name =" ";
-		if (isset($_POST['post'])){	
-			$name = $_POST['name'];
+		if (isset($_GET['post'])){	
+			$name = $_GET['name'];
 		}
 	?>
 
-	<form action="" method="POST">
+	<form action="" method="GET">
 		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
 			<tr>
 				<td colspan="2" align="center" bgcolor="#FF9900"><h1 class="style1">In câu chào  </h1></td>

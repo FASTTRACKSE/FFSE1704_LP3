@@ -2,7 +2,7 @@
 <?php
 	session_start();
 
-	echo "<table cellspacing=\"0\">
+	echo "<table cellspacing="0">
 			<tr style=\"background: #dfdfdf\">
 				<th style=\"width:120px\">Tên sản phẩm </th>
 				<th style=\"width:80px\">Giá</th>

@@ -1,4 +1,4 @@
-# TUNGLNT Assigment Directory
+# TUNGLNT's Assigment Directory
 
 ### Assignment List
 

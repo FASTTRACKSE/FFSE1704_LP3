@@ -6,5 +6,6 @@ session_start();
 		header("location: login.php");
 	}
 	
+	
 ?>
 <a href="dangxuat.php" > Dang xuat </a>

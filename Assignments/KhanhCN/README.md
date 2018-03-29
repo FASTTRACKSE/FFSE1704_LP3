@@ -38,6 +38,8 @@
 
 [Bài 13](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-06.php)
 
+[Bài 14](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-07.php)
+
 
 
 

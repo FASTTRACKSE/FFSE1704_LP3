@@ -1,0 +1,4 @@
+1. SELECT * FROM `sinhvien` WHERE gender = 1 && age > 19;
+2. SELECT * FROM `sinhvien` WHERE name = 'Nam';
+3. SELECT COUNT(*) FROM sinhvien WHERE class = "FFSE1701";
+4. DELETE FROM `sinhvien` WHERE age < 19;

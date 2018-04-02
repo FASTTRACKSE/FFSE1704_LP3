@@ -1,3 +1,3 @@
 3. SELECT code, first_name, nationality, country FROM `lms_students`;
 4. SELECT code, first_name, nationality, country FROM `lms_students` WHERE province != 56
-5. SELECT publisher.pname,publisher.city, authors.firstname, authors.lastname FROM `publisher` INNER JOIN authors ON publisher.city = authors.city
+5. SELECT lms_students.code,lms_students.first_name, lms_students.nationality, lms_students.country FROM `lms_students` INNER JOIN lms_country ON lms_students.country = lms_country.country

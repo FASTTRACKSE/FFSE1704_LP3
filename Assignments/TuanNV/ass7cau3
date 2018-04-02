@@ -1,0 +1,11 @@
+Bài 3:
+
+SELECT	lms_students.code, 
+	   	lms_students.first_name, 
+	   	lms_countries.name AS country, 
+		table_datnuoc.name AS nationality
+FROM lms_students
+INNER JOIN lms_countries
+ON lms_students.country = lms_countries.id
+INNER JOIN lms_countries AS table_datnuoc
+ON lms_students.nationality = table_datnuoc.id

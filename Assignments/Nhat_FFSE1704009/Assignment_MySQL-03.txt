@@ -17,7 +17,7 @@ INNER JOIN lms_countries AS table_quocgia
 ON lms_students.nationality=table_quocgia.id
 INNER JOIN lms_vietnam
 ON lms_students.province=lms_vietnam.id
-WHERE lms_vietnam.id !=56
+WHERE lms_vietnam.id <>56
 
 cau 5:
 SELECT lms_students.code, lms_students.first_name, lms_countries.name AS country, table_quocgia.name AS nationality,lms_vietnam.name AS province

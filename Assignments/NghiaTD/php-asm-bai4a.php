@@ -1,8 +1,4 @@
 
-
-
-
-
 <form action="php-asm-bai4b.php" method="POST" enctype="multipart/form-data">
 	<table border="0" width="500px" bordercolor="#FFFF99" bgcolor="#FFFF99" align="center" >
 		<tr >

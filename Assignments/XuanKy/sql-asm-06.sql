@@ -9,5 +9,6 @@
 5) DELETE FROM sinhvien WHERE Age < 18 ;
 6)UPDATE sinhvien SET Name= REPLACE(Name, "Nam", "Trung") WHERE Name LIKE '%Nam';
 7)SELECT * FROM `sinhvien` ORDER BY 'Age' DESC LIMIT 3;
-SELECT * FROM `danhmuctin` INNER JOIN tintuc ON danhmuctin.id_danhmuctin=tintuc.id_danhmuctin;
-SELECT tendanhmuctin, tentintuc FROM `danhmuctin` INNER JOIN tintuc ON danhmuctin.id_danhmuctin=tintuc.id_danhmuctin
+8)SELECT * FROM `danhmuctin` INNER JOIN tintuc ON danhmuctin.id_danhmuctin=tintuc.id_danhmuctin;
+9)SELECT tendanhmuctin, tentintuc FROM `danhmuctin` 
+INNER JOIN tintuc ON danhmuctin.id_danhmuctin=tintuc.id_danhmuctin;

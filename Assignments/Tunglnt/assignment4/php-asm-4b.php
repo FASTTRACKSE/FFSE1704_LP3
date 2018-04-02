@@ -26,12 +26,11 @@
                 <th>Địa chỉ</th>
                 <th>Chức năng</th>
             </tr>
+            
             <?php
             session_start();
-
             $i = 0;
             foreach ($_SESSION as $value) {
-
                 
                 $i++;
                 ?>
@@ -39,10 +38,10 @@
                     <td>  <?= $i ?> </td>
                     <td>  <?= $value['username'] ?> </td>
                     <td>  <?= $value['fullname'] ?> </td>
-                    <td> <img style="width: 50px;height: 50px; padding-left: 20px;" src="<?='http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/images/'.$value['avatar'] ?>"/></td>
+                    <td> <img style="width: 50px;height: 50px; padding-left: 20px;" src="<?='http://localhost/LP3/Assignments/Tunglnt/assignment4/Image/'.$value['avatar'] ?>"/></td>
                     <td>  <?= $value['gender'] ?> </td>
                     <td>  <?= $value['address'] ?> </td>
-                    <td> <a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/php-asm-04c.php?username=<?=$value['username']?>">Xoa </a> </td>
+                    <td> <a href="">Xoa </a> </td>
                 </tr>
 
                 <?php

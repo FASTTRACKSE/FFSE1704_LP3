@@ -14,3 +14,4 @@
 7. Assigment 6: [php-asm-06](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-06/ffse1704002_mysql_02.sql)<br>
 				[php-asm-06](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-06/ffse1704002_mysql_02.txt)
 8. Assigment 7: [php-asm-07](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-07/ffse1704002_mysql_03.txt)
+9. Quiz: [Quiz-30/3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/Quiz.xls)

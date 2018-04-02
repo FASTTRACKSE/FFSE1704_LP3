@@ -22,3 +22,6 @@
 <br>
 7. Assigment 7: [7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/Assignment_MySQL-03.txt)
 <br>
+<br>
+8. Quiz: [Quiz](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/Quiz.xls)
+<br>

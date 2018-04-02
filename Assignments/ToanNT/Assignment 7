@@ -1,0 +1,3 @@
+3. SELECT code, first_name, nationality, country FROM `lms_students`;
+4. SELECT code, first_name, nationality, country FROM `lms_students` WHERE province != 56
+5. 

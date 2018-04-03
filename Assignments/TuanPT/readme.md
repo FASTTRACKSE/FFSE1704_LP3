@@ -24,3 +24,11 @@
 
 7.Assignment 7:
 [Mã sinh viên](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/masinhvien)<br>
+
+8.Assignment 8:
+[Crud](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/php-asm-08.php)<br>
+      (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/php-asm-8b.php)<br>
+      (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/add.php)<br>
+      (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/info.php)<br>
+      (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/delete.php)<br>
+      (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/TuanPT/edit.php)<br>

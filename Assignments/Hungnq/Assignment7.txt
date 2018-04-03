@@ -1,0 +1,10 @@
+﻿Câu 3:SELECT lms_students.code, lms_students.first_name, lms_students.nationality, lms_countries.name
+FROM lms_students
+INNER JOIN lms_countries
+WHERE lms_students.nationality=lms_countries.id
+
+Câu 4:SELECT lms_students.code, lms_students.first_name, lms_students.nationality, lms_countries.name
+FROM lms_students
+INNER JOIN lms_countries
+WHERE lms_students.nationality=lms_countries.id 
+AND lms_students.province<>56

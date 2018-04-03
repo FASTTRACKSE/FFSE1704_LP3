@@ -104,13 +104,13 @@ if(isset($_POST['submit'])){
 
         	move_uploaded_file($tmp_name, $part_upload);  
             
-            //tao phan tu moi cho mang $_POST
+            //tạo phần tử mới cho mảng $_POST
             if($name!='false'){
                $_POST['avatar']=$namenew;
             }else{
                 $_POST['avatar']="";
             }           
-            //Them phan tu vao session
+            //thêm phần tử vào session
             $_SESSION[$username]=$_POST;
             
            

@@ -18,8 +18,8 @@
 		 $SQL = "SELECT * FROM lms_users";
 		$result = $MYSQLi -> query($SQL);
 	?>
-<h1>User List</h1> <button type="button" class="btn btn-success" style="float: right; margin-top:-45px;margin-right:125px; border: 1px; ">Add New User</button>
-<table class="table table-striped">
+<h1 style="margin-left: 380px;">User List</h1> <button type="button" class="btn btn-success" style="float: right; margin-top:-45px;margin-right:385px; border: 1px; ">Add New User</button>
+<table class="table table-striped" style="width: 50%; margin: auto;">
 		
 		
 			<tr>

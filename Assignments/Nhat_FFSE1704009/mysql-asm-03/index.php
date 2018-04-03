@@ -57,12 +57,6 @@
 
 	
 		
-	</table>
-</body>
-</html>
-	<title>Document</title>
-</head>
-<body>
-	
+	</table>	
 </body>
 </html>

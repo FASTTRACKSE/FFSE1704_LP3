@@ -3,79 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Assignment 4</title>
-	<style type="text/css">
-  table {
-      border-collapse: collapse;
-  }
-  table tr td,
-  th {
-   border: 1px solid black;
-   padding: 10px;
-   padding-right: 100px;
-}
-table th {
-   text-align: left;
-}
-table tr:first-child {
-   background: #d6d5d5;
-}
-</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<?php 
+<?php
+	 $Bug1= "";
+
     if(isset($_POST['submit'])){
     require_once('ket_noi_MySQL.php');
     $MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
-            $name = $_POST['username'];
+
             $fullname = $_POST['fullname'];
             $password= $_POST['password'];
             $email= $_POST['email'];
             $id = $_GET['id'];
-         $SQL = "UPDATE lms_users SET user_name ='$name',user_fullname='$fullname',user_email='$email', user_password='$password' WHERE user_id = $id";
+
+			
+
+            
+        	 		$SQL = "UPDATE lms_users SET user_fullname='$fullname',user_email='$email', user_password='$password' WHERE user_id = $id";
       
            
-            $result = $MYSQLi -> query($SQL);
+            		$result = $MYSQLi -> query($SQL);
 
-          if($result==true){
-              header('Location: index.php');
-          }else{
-            echo "them that bai". $result -> error;
-          }
+          			if($result==true){
+             			 header('Location: index.php');
+          			}else{
+           				 $Bug1= "them that bai";
+          			}
         
-             $MYSQLi -> close();
-    }
+             		$MYSQLi -> close();
+         	}
+    
 
     ?>
 
-    <form method="POST" enctype="multipart/form-data">
+
+<h1 style=" margin-left: 375px;">Update User</h1>
+ <hr style="width: 50%; margin: auto;">
+
+    <form method="POST"  style="width: 50%; margin: auto;">
+      <small id="emailHelp" class="form-text text-muted" style="font-size: 20px;">Please edit the input values and submit  to update the record.</small>
+      <br>
         <table>
-            <tr >
-                <th colspan="2">Chỉnh sửa tài khoản</th>
-            </tr>
-          <tr>
-                <td>Tên đăng nhập (*)</td>
-                <td><input type="text" name="username" required></td>
-            </tr>
-            <tr>
-                <td>Họ và tên (*)</td>
-                <td><input type="text" name="fullname" required></td>
-            </tr>
-            <tr>
-                <td>email (*)</td>
-                <td><input type="mail" name="email" required></td>
-            </tr>
-            <tr>
-                <td>Mật khẩu (*)</td>
-                <td><input type="password" name="password" required></td>
-            </tr>
+            <div>
+                <label>Full Name</label>
+                <input type="text" name="fullname"  class="form-control" required>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="mail" name="email"  class="form-control" required>
+            </div>
+            <div>
+                <label>Pass word</label>
+                <input type="password" name="password"  class="form-control" required>
+            </div>
+            <br>
+            <div>
+                
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary"> 
+                <input type="reset" name="cancel" value="Cancer" class="btn btn-light">
+                
+            </div>
+            <br>
+            <div>
+                <label><?php echo "<strong>". $Bug1."</strong>" ?></label>
+            </div>
             
-            <tr>
-                <td></td>
-                <td><input type="submit" name="submit" value="Xác nhận"> 
-                    <input type="reset" name="cancel" value="Hủy bỏ">
-                </td>
-            </tr>
+
         </table>
     </form>
+
 </body>
 </html>

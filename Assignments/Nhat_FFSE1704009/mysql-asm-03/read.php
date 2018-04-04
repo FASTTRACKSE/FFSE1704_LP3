@@ -13,20 +13,11 @@
 		$SQL = "SELECT * FROM lms_users WHERE user_id=$id";
 		$result = $MYSQLi->query($SQL);
 		$item=$result->fetch_assoc();
-		echo $result -> num_rows;
-		echo "<pre>";
-		print_r($item);
-		echo "</pre>";
 
-
-// Perform queries and print out affected rows
-mysqli_query($MYSQLi,"SELECT * FROM lms_users ");
-echo "Affected rows: " . mysqli_affected_rows($MYSQLi);
-
-
-
-mysqli_close($MYSQLi);
-
+		//echo $result -> num_rows;
+		//echo "<pre>";
+		//print_r($item);
+		//echo "</pre>";
 
 	?>
 	<h1 style=" margin-left: 375px;"> View User Info</h1>
@@ -57,6 +48,12 @@ mysqli_close($MYSQLi);
 			</tr>
 	
 	</table>
+
+
+
+	
+
+
 	<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/index.php"><button type="button" class="btn btn-primary" style="margin-top: 20px; margin-left: 380px;">Back</button></a>
 </body>
 </html>

@@ -32,7 +32,7 @@
           			}else{
            				 $Bug1= "them that bai";
           			}
-        
+        print_r($name);
              		$MYSQLi -> close();
          	}
     

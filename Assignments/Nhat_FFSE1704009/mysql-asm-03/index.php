@@ -43,8 +43,8 @@
 				<td><?= $arUS['user_email'] ?></td>
 				<td>
 					<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/read.php?id=<?=$arUS['user_id'] ?>"  style="padding-right: 10px;"><span class="glyphicon glyphicon-eye-open"></span></a>
-					<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/update.php?id=<?=$arUS['user_id'] ?>" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
-					<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/delete.php?id=<?=$arUS['user_id'] ?>" ><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/update.php?id=<?=$arUS['user_id'] ?>&name=<?=$arUS['user_name'] ?>" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/Nhat_FFSE1704009/mysql-asm-03/delete.php?id=<?=$arUS['user_id']?>" ><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 			</tr>
 		

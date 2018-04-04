@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Assignment 4</title>
+	<title>Update</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <?php
+	
 	 $Bug1= "";
-
+	 $name = $_GET['name'];
     if(isset($_POST['submit'])){
     require_once('ket_noi_MySQL.php');
     $MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
 
+    		
             $fullname = $_POST['fullname'];
-            $password= $_POST['password'];
             $email= $_POST['email'];
             $id = $_GET['id'];
 
 			
 
             
-        	 		$SQL = "UPDATE lms_users SET user_fullname='$fullname',user_email='$email', user_password='$password' WHERE user_id = $id";
+        	 		$SQL = "UPDATE lms_users SET user_fullname='$fullname',user_email='$email' WHERE user_id = $id";
       
            
             		$result = $MYSQLi -> query($SQL);
@@ -46,6 +47,8 @@
       <small id="emailHelp" class="form-text text-muted" style="font-size: 20px;">Please edit the input values and submit  to update the record.</small>
       <br>
         <table>
+        	<div>
+                <label>User Name: <?php echo "<strong>".$name."</strong>" ?></label>            </div>
             <div>
                 <label>Full Name</label>
                 <input type="text" name="fullname"  class="form-control" required>
@@ -53,10 +56,6 @@
             <div>
                 <label>Email</label>
                 <input type="mail" name="email"  class="form-control" required>
-            </div>
-            <div>
-                <label>Pass word</label>
-                <input type="password" name="password"  class="form-control" required>
             </div>
             <br>
             <div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Assignment 4</title>
+	<title>Create</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
@@ -20,7 +20,7 @@
   
       mysqli_query($MYSQLi,"SELECT * FROM lms_users WHERE user_name= '$name'");
 
-                
+
                 if( mysqli_affected_rows($MYSQLi)>0){
                   $Bug1= "User Name trùng.";
                 }else{
@@ -81,7 +81,7 @@
             </div>
 
         </table>
-        
+
     </form>
 
 <br>

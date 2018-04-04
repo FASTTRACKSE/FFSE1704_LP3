@@ -2,32 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Delete</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<?php
-		if(isset($_POST['submit'])){
-
-		require_once('ket_noi_MySQL.php');
-    		$MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
-            $id = $_GET['id'];
-         $SQL = "DELETE FROM lms_users WHERE user_id = $id";
-      
-           
-            $result = $MYSQLi -> query($SQL);
-
-         
-              header('Location: index.php');
-        
-             $MYSQLi -> close();
-        };
-
-        if(isset($_POST['cancel'])){
-        	header('Location: index.php');
-        };
-	?>
-	<h1 style=" margin-left: 375px;">Delete User</h1>
+	
+</body>
+</html>
+<h1 style=" margin-left: 375px;">Delete User</h1>
  	<hr style="width: 50%; margin: auto;">
 	<form  method="POST"  style="width: 50%; margin: auto; background-color:#FFC0CB; ">
 		<small id="emailHelp" class="form-text text-muted" style="font-size: 20px;margin: 25px;padding-top: 25px;">Are you sure you want to delete this user ?</small>
@@ -39,5 +22,27 @@
         </div>
        </table>		
 	</form>
-</body>
-</html>
+
+<?php
+		if(isset($_POST['submit'])){
+
+			require_once('themknoi.php');
+			$mysqli=connectDB('localhost','nghia111','123456','hoc_sinh');
+			$id=$_GET['id'];
+
+
+         $sql = "DELETE FROM lms_users WHERE user_id = $id";
+      
+           
+            $result = $mysqli -> query($sql);
+
+         
+              header('Location: php-asm-8b.php');
+        
+             $mysqli -> close();
+         }
+           if(isset($_POST['cancel'])){
+        	header('Location: them.php');
+        };
+         
+	?>

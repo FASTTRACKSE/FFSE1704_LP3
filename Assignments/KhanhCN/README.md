@@ -41,6 +41,14 @@
 [Bài 14](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/sql-asm-07.php)
 
 
+Assignment 08: 
+[File 1](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-index.php)
+[File 2](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-new.php)
+[File 3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-function.php)
+[File 4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-insert.php)
+[File 5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-edit.php)
+[File 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-hienthi.php)
+[File 7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-delete.php)
 
 
 

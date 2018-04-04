@@ -48,7 +48,9 @@
       <br>
         <table>
         	<div>
-                <label>User Name: <?php echo "<strong>".$name."</strong>" ?></label>            </div>
+                <label>User Name</label>
+                <input type="text" name="fullname"  class="form-control" value="<?php echo $name ?>" disabled>
+            </div>
             <div>
                 <label>Full Name</label>
                 <input type="text" name="fullname"  class="form-control" required>

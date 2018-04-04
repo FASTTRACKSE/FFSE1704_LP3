@@ -44,15 +44,15 @@
 						<td><?=$arUsers['user_fullname']?></td>
 						<td><?=$arUsers['user_email']?></td>
 						<td>
-		        			<a href="#">
+		        			<a href="http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-08/read.php?id=<?=$arUsers['user_id'] ?>">
 								<span class="glyphicon glyphicon-eye-open" style="padding: 10px"></span>
 							</a>
 
-							<a href="#">
+							<a href="http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-08/update.php?id=<?=$arUsers['user_id'] ?>?name=<$arUsers['user_id'] ?>">
 								<span class="glyphicon glyphicon-pencil" style="padding: 10px"></span>
 							</a>
 
-							<a href="#">
+							<a href="http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-08/delete.php?id=<?=$arUsers['user_id'] ?>">
 								<span class="glyphicon glyphicon-trash" style="padding: 10px"></span>
 							</a>
 						</td>

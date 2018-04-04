@@ -21,6 +21,8 @@
 
 	?>
 	<h1 style=" margin-left: 375px;"> View User Info</h1>
+	<hr style="width: 50%; margin: auto;">
+	<br>
 	<table class="table table-striped" style="width: 50%; margin: auto;">
 	
 			<tr>

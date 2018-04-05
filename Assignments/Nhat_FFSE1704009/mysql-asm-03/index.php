@@ -108,17 +108,7 @@
               $result -> num_rows;
               if($result -> num_rows >0){
               	
-              	$sotin_1_trang= 5;
-		 		if(isset($_GET['trang'])){
-		 		 $trang= $_GET['trang'];
-		 	 	settype($trang, "int");
-				 }else{
-		 		$trang = 1;
-				 }
-				 $from= ($trang-1)*$sotin_1_trang;
-				 $SQL = "SELECT * FROM lms_users LIMIT $from, $sotin_1_trang";
-				$result = $MYSQLi -> query($SQL);
-
+             
 
 				while ($arUS = $result->fetch_assoc()) {
 			

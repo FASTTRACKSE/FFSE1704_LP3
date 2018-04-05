@@ -12,13 +12,14 @@
 </head>
 <body>
 	<?php
-			require_once('php-asm-08c.php');
-			$ketnoi = ketnoi_database('localhost', 'root', '', 'ffse1702016');
+		require_once('php-asm-08c.php');
+		$ketnoi = ketnoi_database('localhost', 'root', '', 'ffse1702016');
 		if(isset($_POST['submit'])){
 			$name = $_POST['Name'];
 			$fullname = $_POST['Fullname'];
+			$email = $_POST['Email'];
 			$password = $_POST['Password'];
-			$sql = "INSERT INTO lms_users(user_name, user_fullname, user_password) VALUES('$name','$fullname','$password')";
+			$sql = "INSERT INTO lms_users(user_name, user_fullname, user_email, user_password) VALUES('$name','$fullname', '$email', '$password')";
 			echo "$sql";
 			$result = $ketnoi->query($sql);
 			$ketnoi->close();
@@ -27,8 +28,8 @@
 <form method="post">
 	Tên tải khoản: <input type="text" name="Name"><br/>
 	Họ và tên: <input type="text" name="Fullname"><br/>
+	Email: <input type="text" name="Email"><br/>
 	Mật khẩu: <input type="password" name="Password"><br/>
-	Ảnh đại diện: <input type="submit" name="Chose_file" value="Chose file"><br/>
 	<input type="submit" name="submit" value="Gửi">
 </form>
 </body>

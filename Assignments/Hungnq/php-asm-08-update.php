@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Creat User</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<title>Hungnq</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
-<body>
+<body style="margin: auto;width: 500px">
 	<?php
-			require_once('php-asm-08c.php');
-			$ketnoi = ketnoi_database('localhost', 'root', '', 'webuser');
-		if(isset($_POST['submit'])){
-			$name = $_POST['Name'];
-			$password = $_POST['Password'];
-			$email = $_POST['Email'];
-			$sql = "INSERT INTO user(user_name, password, mail) VALUES('$name','$password','$email')";
-			echo "$sql";
-			$result = $ketnoi->query($sql);
-			$ketnoi->close();
-		}
+	require_once "php-asm-08c.php";
+	$ahihi= ketnoi_database('localhost', 'root', '', 'ffse1702016');
+	if (isset($_POST['username'])) {
+		$username=$_POST['username'];
+		$fullname=$_POST['fullname'];
+		$email=$_POST['email'];
+		$password=$_POST['matkhau'];
+		$id=$_GET['user_id'];
+		$sql="UPDATE lms_users SET user_name = '$username',user_fullname = '$fullname',user_email = '$email',user_password = '$password' WHERE user_id=$id";
+		$result=$ahihi->query($sql);
+		$ahihi->close();
+	}
 	?>
-<form method="post">
-	Name: <input type="text" name="Name"><br/>
-	Password: <input type="password" name="Password"><br/>
-	Email: <input type="text" name="Email"><br/>
-	<input type="submit" name="submit" value="Gửi">
-</form>
+	<div><p style="font-size: 30px;margin-left: 165px;margin-top: 10px;color: red;font-family: fantasy;" class="typography-headline">Update Users Info</p></div>
+	<form method="post" style="max-width: 500px">
+		Tên tài khoản <input type="text" name="username" class="form-control">
+		Họ và tên <input type="text" name="fullname" class="form-control">
+		Email <input type="text" name="email" class="form-control">
+		Mật khẩu <input type="password" name="matkhau" class="form-control">	
+		<div>
+			<input class="btn btn-success" type="submit" name="submit" value="Sửa" style="    margin-top: 15px;">
+			<a href="index.php">
+				<button type="button" class="btn btn-info" style="margin-left: 377px;margin-top: 15px;">Trở lại</button>
+			</a>
+		</div>
+	</form>
 </body>
 </html>

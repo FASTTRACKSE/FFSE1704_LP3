@@ -9,25 +9,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<style type="text/css">
 		.user{
-			width: 200px;
+			width: auto;
 			text-align: center;
 		}
 		.row2{
-			padding-left: 500px;
+			padding-left: 50px;
 		}
 		body{
 			padding-top: 70px;
-			margin-left: 300px;
+			margin-left: 50px;
+		}
+		.container{
+			align-content: auto;
 		}
 	</style>
 </head>
 <body>
+<div class="container">
 <div class="input-group mb-3">
 	<div>
-    	<h3>User List<h3/>
+    	<h2>User List</h2>
   	</div>
 	<div class="input-group-prepend row2">
-    	<button class="btn btn-outline-secondary" type="button">Add new user</button>
+    	<a href="http://localhost/ffse1702016/php-asm-08-creat.php"><button class="btn btn-outline-secondary" type="button">Add new user</button></a>
   	</div>
 </div>
 <?php
@@ -39,11 +43,10 @@
 ?>
 <table  class="table table-striped user border border-secondary">
 	<tr>
-		<td>STT</td>
+		<td>#</td>
 		<td>Name</td>
 		<td>Fullname</td>
 		<td>Email</td>
-		<td>Password</td>
 		<td>Action</td>
 	</tr>
 <?php
@@ -54,11 +57,8 @@
 		<td><?=$mang['user_name'] ?></td>
 		<td><?=$mang['user_fullname'] ?></td>
 		<td><?=$mang['user_email'] ?></td>
-		<td><?=$mang['user_password'] ?></td>
 		<td>
-			<span class="glyphicon glyphicon-eye-open"></span>
-			<span class="glyphicon glyphicon-pencil"></span>
-			<span class="glyphicon glyphicon-trash"></span>
+			<a href="http://localhost/ffse1702016/php-asm-08-view.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-eye-open"></span></a><a href="http://localhost/ffse1702016/php-asm-08-update.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-pencil"></span></a><a href="http://localhost/ffse1702016/php-asm-08-delete.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
 		</td>
 	</tr>
 <?php
@@ -66,5 +66,6 @@
 	$ketnoi->close();
 ?>	
 </table>
+</div>
 </body>
 </html>

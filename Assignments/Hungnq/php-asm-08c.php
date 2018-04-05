@@ -9,4 +9,7 @@
 		} 
 		return $no_name;
 	}
+	function Create(){
+		
+	}
 ?>

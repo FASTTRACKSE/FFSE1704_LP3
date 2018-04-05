@@ -1,4 +1,4 @@
-1) INSERT INTO sinhvien (Name,Age,Class,Gender) VALUES ('Hồ Công Lịnh',19,'FFSE1701','Nam'),
+1) INSERT INTO sinhvien (id,Name,Age,Class,Gender) VALUES ('Hồ Công Lịnh',19,'FFSE1701','Nam'),
 ('Trần Thu Hà',19,'FFSE1701','Nữ'),('Trầ Thị Tuyết Nhung',19,'FFSE1701','Nữ'),
 ('Trần Nguyên Nam',19,'FFSE1701','Nam'),('Mai Tuyết Loan',18,'FFSE1702','Nam'),
 ('Trương Đại Nghĩa',20,'FFSE1702','Nam'),('Phạm Quang Nhân',21,'FFSE1702','Nam'),

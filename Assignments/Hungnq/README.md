@@ -2,4 +2,18 @@
 
 ### Assignment List
 
-1. Assigment 0: [Hello World](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/hello.php)
+1. Assigment 1: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-01.php)
+2. Assigment 1b: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-01b.php)
+3. Assigment 2: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-02.php)
+4. Assigment 3: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-03.php)
+5. Assigment 3b: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-03-shop.php)
+6. Assigment 5: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-05.php)
+7. Assigment 6: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-06.php)
+8. Assigment 7: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/Assignment7)
+9. Quizz: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/Quiz)
+10. Assigment 8: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08.php)
+11. Assigment 8b: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08b.php)
+12. Assigment 8c: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08c.php)
+13. Assigment 8-creat: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-creat.php)
+14. Assigment 8-update: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-update.php)
+15. Assigment 8-view: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-view.php)

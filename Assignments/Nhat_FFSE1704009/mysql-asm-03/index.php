@@ -103,14 +103,14 @@
             	require_once('ket_noi_MySQL.php');
                 
                 $MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
-              $SQL = "SELECT * FROM lms_users WHERE user_name LIKE '%$search%'";
-              $result = $MYSQLi -> query($SQL);
-              $result -> num_rows;
-              if($result -> num_rows >0){
+              $SQL1 = "SELECT * FROM lms_users WHERE user_name LIKE '%$search%'";
+              $result1 = $MYSQLi -> query($SQL1);
+              $result1 -> num_rows;
+              if($result1 -> num_rows >0){
               	
              
 
-				while ($arUS = $result->fetch_assoc()) {
+				while ($arUS = $result1->fetch_assoc()) {
 			
 	?>
 	

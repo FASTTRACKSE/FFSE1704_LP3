@@ -5,27 +5,32 @@
 		isset($_POST["tenhoa"]) || 
 		isset($_POST["soluong"]) || 
 		isset($_POST["dongia"])
-	){
+	)
+	{
 		
 		$id = $_POST['id'];
 		$tenhoa = $_POST['tenhoa'];
 		$soluong = $_POST['soluong'];
 		$dongia = $_POST['dongia']; 
-
+		
+		
 		if (isset($_SESSION['giohang'][$id])) {
-			$_SESSION['giohang'][$id]['soluong']= $soluong;
+			$_SESSION['giohang'][$id]['soluong']+= $soluong;
 		}else{
 			$_SESSION['giohang'][$id] = array(
+				
 				'id' => $id,
 				'tenhoa' => $tenhoa,
 				'soluong' => $soluong,
 				'dongia' => $dongia,
-				'anh' => $anh
+			
 			);
 		}
 		header("location: php-asm-03giohang.php");
 	}
+
 ?>
+
 
 <!DOCTYPE html>
 <html>

@@ -8,13 +8,14 @@
 </head>
 <body>
 	<?php 
-require_once('php-asm-8a.php');
+require_once('php-asm-8/php-asm-8a.php');
 $mysqli=connectDB('localhost','nghia123','123456','hoc_sinh');
 $sql="SELECT * FROM lms_users";
 
 	$result=$mysqli->query($sql);
 ?>
-<h1>User List</h1> <button type="button" class="btn btn-success" style="float: right; margin-top:-45px;margin-right:125px;  ">Add New User</button>
+<h1>User List</h1>
+<a href="php-asm-8/them.php"><button type="button" class="btn btn-success" style="float: right; margin-top:-45px;margin-right:125px;  ">Add New User</button></a> 
 <table class="table table-striped">
  	<tr>
  		<th>#</th>
@@ -35,9 +36,9 @@ $sql="SELECT * FROM lms_users";
  	 	<td><?=$arus['user_email'] ?></td>
  	 	
 	   <td>
-					<a href="#"  style="padding-right: 10px;"><span class="glyphicon glyphicon-eye-open"></span></a>
-					<a href="#" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
-					<a href="#" ><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/themknoi1.php?id=<?=$arus['user_id'] ?>"  style="padding-right: 10px;"><span class="glyphicon glyphicon-eye-open"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/themknoi2.php?id=<?=$arus['user_id'] ?>" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/delete.php?id=<?=$arus['user_id'] ?>" ><span class="glyphicon glyphicon-trash"></span></a>
 				
 				</td>
 	 </tr>

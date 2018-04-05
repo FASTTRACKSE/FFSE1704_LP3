@@ -36,9 +36,9 @@ $sql="SELECT * FROM lms_users";
  	 	<td><?=$arus['user_email'] ?></td>
  	 	
 	   <td>
-					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/themknoi1.php?id=<?=$arus['user_id'] ?>"  style="padding-right: 10px;"><span class="glyphicon glyphicon-eye-open"></span></a>
-					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/themknoi2.php?id=<?=$arus['user_id'] ?>" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
-					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/delete.php?id=<?=$arus['user_id'] ?>" ><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/themknoi1.php?id=<?=$arus['user_id'] ?>"  style="padding-right: 10px;"><span class="glyphicon glyphicon-eye-open"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/themknoi2.php?id=<?=$arus['user_id'] ?>" style="padding-right: 10px;"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a href="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-8/delete.php?id=<?=$arus['user_id'] ?>" ><span class="glyphicon glyphicon-trash"></span></a>
 				
 				</td>
 	 </tr>

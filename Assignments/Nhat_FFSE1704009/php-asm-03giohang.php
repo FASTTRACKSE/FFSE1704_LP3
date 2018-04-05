@@ -2,7 +2,7 @@
 <?php
 	session_start();
 
-	echo "<table cellspacing="0">
+	echo "<table cellspacing=\"0\">
 			<tr style=\"background: #dfdfdf\">
 				<th style=\"width:120px\">Tên sản phẩm </th>
 				<th style=\"width:80px\">Giá</th>
@@ -34,7 +34,7 @@
 
 	unset($_SESSION['giohang'][1]);
 ?>
-<td><a href="shop.php">Trở về</a></td>
+<td><a href="php-asm-03cuahang.php">Trở về</a></td>
 
 <?php
 	echo("<pre>");

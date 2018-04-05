@@ -13,14 +13,10 @@
     if(isset($_POST['submit'])){
     require_once('ket_noi_MySQL.php');
     $MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
-
-    		
+  		
             $fullname = $_POST['fullname'];
             $email= $_POST['email'];
             $id = $_GET['id'];
-
-			
-
             
         	 		$SQL = "UPDATE lms_users SET user_fullname='$fullname',user_email='$email' WHERE user_id = $id";
       
@@ -32,7 +28,7 @@
           			}else{
            				 $Bug1= "them that bai";
           			}
-        print_r($name);
+        
              		$MYSQLi -> close();
          	}
     

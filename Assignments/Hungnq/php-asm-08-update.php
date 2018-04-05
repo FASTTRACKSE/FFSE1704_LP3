@@ -27,7 +27,7 @@
 		Mật khẩu <input type="password" name="matkhau" class="form-control">	
 		<div>
 			<input class="btn btn-success" type="submit" name="submit" value="Sửa" style="    margin-top: 15px;">
-			<a href="index.php">
+			<a href="http://localhost/ffse1704_LP3/Assignments/Hungnq/php-asm-08b.php">
 				<button type="button" class="btn btn-info" style="margin-left: 377px;margin-top: 15px;">Trở lại</button>
 			</a>
 		</div>

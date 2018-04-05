@@ -47,6 +47,7 @@
 		<td>Name</td>
 		<td>Fullname</td>
 		<td>Email</td>
+		<td>Password</td>
 		<td>Action</td>
 	</tr>
 <?php
@@ -57,8 +58,9 @@
 		<td><?=$mang['user_name'] ?></td>
 		<td><?=$mang['user_fullname'] ?></td>
 		<td><?=$mang['user_email'] ?></td>
+		<td><?=$mang['user_password'] ?></td>
 		<td>
-			<a href="http://localhost/ffse1702016/php-asm-08-view.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-eye-open"></span></a><a href="http://localhost/ffse1702016/php-asm-08-update.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-pencil"></span></a><a href="http://localhost/ffse1702016/php-asm-08-delete.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
+			<a href="http://localhost/ffse1704_LP3/Assignments/Hungnq/php-asm-08-view.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-eye-open"></span></a><a href="http://localhost/ffse1704_LP3/Assignments/Hungnq/php-asm-08-update.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-pencil"></span></a><a href="http://localhost/ffse1704_LP3/Assignments/Hungnq/php-asm-08-delete.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
 		</td>
 	</tr>
 <?php

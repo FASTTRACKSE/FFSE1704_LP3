@@ -38,13 +38,15 @@
 		//Phân trang
 		require_once('ket_noi_MySQL.php');
 		 $MYSQLi = connectDB('localhost','Zeref','941505','ffse1704009_mysql_02');
+
 		 $sotin_1_trang= 5;
+
 		 if(isset($_GET['trang'])){
 		 	 $trang= $_GET['trang'];
-		 	 settype($trang, "int");
 		 }else{
 		 	$trang = 1;
 		 }
+
 		 $from= ($trang-1)*$sotin_1_trang;
 		 $SQL = "SELECT * FROM lms_users LIMIT $from, $sotin_1_trang";
 		$result = $MYSQLi -> query($SQL);
@@ -105,7 +107,17 @@
               $result = $MYSQLi -> query($SQL);
               $result -> num_rows;
               if($result -> num_rows >0){
-              	//echo $search;
+              	
+              	$sotin_1_trang= 5;
+		 		if(isset($_GET['trang'])){
+		 		 $trang= $_GET['trang'];
+		 	 	settype($trang, "int");
+				 }else{
+		 		$trang = 1;
+				 }
+				 $from= ($trang-1)*$sotin_1_trang;
+				 $SQL = "SELECT * FROM lms_users LIMIT $from, $sotin_1_trang";
+				$result = $MYSQLi -> query($SQL);
 
 
 				while ($arUS = $result->fetch_assoc()) {
@@ -160,7 +172,7 @@
     <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit"></input>
   </form>
 </nav>
-
+<!--
 	<?php
 
         if (isset($_GET['submit'])) {
@@ -185,7 +197,7 @@
             }
         }
         ?>   
-
+-->
 
 </body>
 </html>

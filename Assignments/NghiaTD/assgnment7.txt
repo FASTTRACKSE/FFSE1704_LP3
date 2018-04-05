@@ -29,7 +29,7 @@ ON lms_students.nationality = table_quocgia.id
 INNER JOIN lms_vietnam
 ON lms_students.province=lms_vietnam.id
 ORDER BY lms_students.code DESC 
-LIMIT 5
+LIMIT (0,5)
 
 Nâng cao:
 SELECT lms_students.code, lms_students.first_name, lms_countries.name AS country, table_quocgia.name AS nationality,lms_vietnam.name AS province,lms_students.birth_day AS ngày_sinh,lms_students.birth_month AS Tháng_sinh, lms_students.birth_year AS Năm_sinh

@@ -1,5 +1,5 @@
 
-<form action="php-asm-bai4b.php" method="POST" enctype="multipart/form-data">
+<form action="" method="POST" enctype="multipart/form-data">
 	<table border="0" width="500px" bordercolor="#FFFF99" bgcolor="#FFFF99" align="center" >
 		<tr >
 			<td colspan="2" bgcolor="#FF9900" align="center">Phiếu đăng nhập</td>
@@ -65,4 +65,40 @@
 			</tr>
 	</table>
 </form>
+<?php 
+session_start();
+	if(isset($_POST['post'])){
+		$ten=$_POST['name'];
+		$password=$_POST['password'];
+		$hoten=$_POST['hoten'];
+		$diachi=$_POST['diachi'];
+		$gioitinh=$_POST['gioitinh'];
+		$sothich=$_POST['sothich'];
 
+		$tenfile='fileanh';
+		$name = $_FILES['fileanh']['name'];
+		// var_dump($name);die();
+		$arname=explode('.', $name);
+		$duoifile = end($arname);
+		
+		$newname=time();
+		$namenew=$newname.'.'.$duoifile;
+		$tmp_name=$_FILES['fileanh']['tmp_name'];
+		$part = $_SERVER['DOCUMENT_ROOT'];//C:/xampp/htdocs
+		$part_upload = $part.'/FFSE1704_LP3/Assignments/NghiaTD/img'.$namenew;
+		move_uploaded_file($tmp_name, $part_upload);  
+		if($name='TRUE'){
+			$_POST['fileanh']=$namenew;
+		}
+		else {
+			$_POST['fileanh']="";
+		}
+		
+
+		$_SESSION[$ten]=$_POST;
+		header("location: php-asm-bai4b.php");
+		
+	}
+	
+
+ ?>

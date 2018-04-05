@@ -26,5 +26,5 @@
 8. Quiz: [Quiz](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/Quiz.xls)
 <br>
 <br>
-9. Assigment 8: [8_KN](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/mysql-asm-03/ket_noi_MySQL.php)<br>[8_index](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Nhat_FFSE1704009/mysql-asm-03/index.php)
+9. Assigment 8: [8](https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/Nhat_FFSE1704009/mysql-asm-03)
 <br>

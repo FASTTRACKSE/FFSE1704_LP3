@@ -31,6 +31,7 @@
 	Email: <input type="text" name="Email"><br/>
 	Mật khẩu: <input type="password" name="Password"><br/>
 	<input type="submit" name="submit" value="Gửi">
+	<a href="http://localhost/ffse1702016/php-asm-08b.php">Back</a>
 </form>
 </body>
 </html>

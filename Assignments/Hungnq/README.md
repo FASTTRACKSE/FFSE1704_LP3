@@ -17,3 +17,6 @@
 13. Assigment 8-creat: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-creat.php)
 14. Assigment 8-update: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-update.php)
 15. Assigment 8-view: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-view.php)
+16. 15. Assigment 8-delete: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-delete.php)
+17. 15. Assigment 8-login: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-login.php)
+18. 15. Assigment 8-logout: (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/Hungnq/php-asm-08-logout.php)

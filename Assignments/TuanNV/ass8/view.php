@@ -1,6 +1,6 @@
 <?php
 		require_once('libaries.php');
-		$mysqli = connectDB('localhost','tunglnt1702','123456','ffse1702052');
+		$mysqli = connectDB('localhost','tuannv','tuannv','ffse1702041');
 		$id = $_GET['id'];
 		$sql = "SELECT * FROM `lms_users` WHERE user_id = $id";
 		$rs = $mysqli->query($sql);

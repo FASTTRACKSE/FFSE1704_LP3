@@ -16,7 +16,7 @@
 
 <?php
 require_once('libaries.php');
-$mysqli = connectDB('localhost','tunglnt1702','123456','ffse1702052');
+$mysqli = connectDB('localhost','tuannv','tuannv','ffse1702041');
 $user_id=$_GET['id'];
 if (isset($_POST['yes'])) {
    $user_id = $_GET['id'];

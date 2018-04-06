@@ -14,6 +14,10 @@
 	.container{
 		width: 350px;
 	}
+	body{
+		background: url(http://www.sivashaktitourism.com/wp-content/uploads/2016/08/bg.jpg);
+		padding-top: 105px;
+	}
 </style>
 </head>
 <body>

@@ -14,8 +14,9 @@
 5. Assignment 5: </br>
 [mysql-asm-01](https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/DoanhNT/LP3-BT-PHP05)
 6. Assigment 6: </br>
-[mysql-asm-02]()
+[mysql-asm-02](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DoanhNT/KP3-BT-MYSQL06/ffse1704062_mysql_02.sql)
 7. Assigment 7: </br>
-[mysql-asm-03]()
+[mysql-asm-03](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DoanhNT/LP3-BT-MYSQL07/ffse1704062_mysql_03.txt)
 8. Assigment 8: </br>
-[mysql-asm-04]()
+[mysql-asm-04](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DoanhNT/LP3-BT-MYSQL08/ffse1704062_mysql_04.sql)</br>
+[mysql-asm-04](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DoanhNT/LP3-BT-MYSQL08/index.php)

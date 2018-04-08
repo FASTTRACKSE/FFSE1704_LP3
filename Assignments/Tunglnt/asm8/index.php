@@ -9,20 +9,42 @@
 
 	</head>
 	<body>
+		<?php
+		require_once('libaries.php');		
+		$per_page=5 	;
+		if(isset($_GET['page'])){
+			$page = $_GET['page'];
+			if($page<0){
+				$page=1;
+			}
+		}else{
+			$page=1;
+		}
+		$current_page= ($page-1)*$per_page;
+		if(isset($_GET['search'])){
+			$search = $_GET['search'];
+		}else{
+			$search = '';
+		}
+		$mysqli = connectDB('localhost','tunglnt1702','123456','ffse1702052');
+		$sql1 = "SELECT * FROM lms_users WHERE user_fullname LIKE '%$search%'";
+		$result1 = $mysqli -> query($sql1);
+		$total_rows= $result1->num_rows;
+		$rows= ceil($total_rows/$per_page);
+		$sql = "SELECT * FROM lms_users WHERE user_fullname LIKE '%$search%' LIMIT $current_page,$per_page";
+		echo $sql;
+		$result = $mysqli -> query($sql);
+	?>
 		
 		<div style="width: 50%;margin: auto;">
 			<div>
 				<h1>Users List</h1>
 				<button type="button" class="btn btn-success" style="float: right; margin-top:-45px;margin-right:0px; "><a style="text-decoration: none;" href="create.php">Add New User</a></button>
 			</div>
+			<form action='' method="GET">
+	<input type = "text" name='search'value='<?=$search?>' placeholder="Tim kiem"/>
+</form>
 			<div>
-				<?php
-					require_once('libaries.php');
-					$mysqli = connectDB('localhost','tunglnt1702','123456','ffse1702052');
-					//thực thi các câu lệnh truy vấn tại đây
-					$sql = "SELECT * FROM lms_users";
-					$result = $mysqli->query($sql);
-				?>
 				<table class="table table-bordered table-striped">
 					<tr>
 						<th>ID</th>
@@ -66,11 +88,25 @@
 			</div>
 			<div>
   			<ul class="pagination">
-	    		<li><a href="#">1</a></li>
-		    	<li><a href="#">2</a></li>
-		    	<li><a href="#">3</a></li>
-		    	<li><a href="#">4</a></li>
-		    	<li><a href="#">5</a></li>
+  				<?php for($i=1;$i<=$rows;$i++){ ?>
+	    		<li><a href="http://localhost/FFSE1704_LP3/Assignments/Tunglnt/asm8/index.php?page=<?=$i?>&search=<?=$search?>"> Trang <?=$i?></a></li>
+	    		<?php } ?>
+	    		<?php
+					if($page>1&&$page<$rows){
+				?>
+		    	<li><a href="http://localhost/FFSE1704_LP3/Assignments/Tunglnt/asm8/index.php?page=<?=$page+1?>&search=<?=$search?>"> next </a>	</li>
+		    	<li><a href="http://localhost/FFSE1704_LP3/Assignments/Tunglnt/asm8/index.php?page=<?=$page-1?>&search=<?=$search?>"> previous </a></li>
+		    	<?php	
+					}elseif($page==$rows){
+				?>
+		    	<li><a href="http://localhost/FFSE1704_LP3/Assignments/Tunglnt/asm8/index.php?page=<?=$page-1?>&search=<?=$search?>"> previous</a></li>
+		    	<?php 
+					}else{
+				?>
+		    	<li><a href="http://localhost/FFSE1704_LP3/Assignments/Tunglnt/asm8/index.php?page=<?=$page+1?>&search=<?=$search?>"> next</li>
+		    	<?php
+					}
+				?>
   			</ul>
 		</div>
 		</div>

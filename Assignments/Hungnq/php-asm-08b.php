@@ -8,45 +8,40 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<style type="text/css">
-		.user{
-			width: auto;
-			text-align: center;
-		}
-		.row2{
-			padding-left: 50px;
-		}
-		body{
-			padding-top: 70px;
-			margin-left: 50px;
-		}
-		.container{
-			align-content: auto;
-		}
+	.container{
+		width: 800px;
+	}
 	</style>
 </head>
 <body>
 <div class="container">
 <div class="input-group mb-3">
-	<div>
-    	<h2>User List</h2>
-  	</div>
-	<div class="input-group-prepend row2">
-    	<a href="http://localhost/ffse1702016/php-asm-08-creat.php"><button class="btn btn-outline-secondary" type="button">Add new user</button></a>
+	<div class="input-group-prepend" style="margin-top: 40px;">
+		<h2 style="width: 160px;margin-bottom: -36px;">User List</h2>
+    	<div style="margin-left: 600px;"><button class="btn btn-default"><a href="http://localhost/ffse1702016/php-asm-08-creat.php">Creat User</a></button>
+    	<button class="btn btn-default"><a href="http://localhost/ffse1702016/php-asm-08-logout.php">Logout</a></button></div>
   	</div>
 </div>
 <?php
+session_start();
+if (isset($_SESSION['name'])) {
+}
+if (empty($_SESSION['name'])) {
+	header("location: php-asm-08-login.php");
+}
 	require_once('php-asm-08c.php');
 	$ketnoi = ketnoi_database('localhost', 'root', '', 'ffse1702016');
 	// tạo câu lệnh sql và thực thi
 	$sql = "SELECT * FROM lms_users";
 	$result = $ketnoi->query($sql);
 ?>
-<table  class="table table-striped user border border-secondary">
+<table  class="table table-striped border border-secondary">
 	<tr>
 		<td>#</td>
 		<td>Name</td>
 		<td>Fullname</td>
 		<td>Email</td>
+		<td>Passsword</td>
 		<td>Action</td>
 	</tr>
 <?php
@@ -57,6 +52,7 @@
 		<td><?=$mang['user_name'] ?></td>
 		<td><?=$mang['user_fullname'] ?></td>
 		<td><?=$mang['user_email'] ?></td>
+		<td><?=$mang['user_password'] ?></td>
 		<td>
 			<a href="http://localhost/ffse1702016/php-asm-08-view.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-eye-open"></span></a><a href="http://localhost/ffse1702016/php-asm-08-update.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-pencil"></span></a><a href="http://localhost/ffse1702016/php-asm-08-delete.php?user_id=<?=$mang['user_id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
 		</td>
@@ -64,7 +60,7 @@
 <?php
 	}
 	$ketnoi->close();
-?>	
+?>
 </table>
 </div>
 </body>

@@ -8,3 +8,11 @@
 6) assigment 3ab:(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/php-asm-03ab.php)
                c:(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/php-asm-03c.PHP)
  7)assigment 2(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/php-asm-02.php)
+ 8)assigment 8(https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/create.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/delete.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/index.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/libaries.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/mysql.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/read.php
+               https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/HoNL/update.php
+               )

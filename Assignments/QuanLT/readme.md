@@ -8,3 +8,5 @@
 4. Assignment 4: [Assignment 3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_PHP3.php)
 5. Assignment 5: [Assignment 4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_PHP4.php)
 6. Assignment 6: [Assignment 5 SQL](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/Assignment_SQL1.sql)
+7. Assignment 7: [Assignment 7 SQL](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/QuanLT/sql_asm7.sql)
+8. Assignment 8: [Assignment 8 SQL](https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/QuanLT/php_sql_asm8)

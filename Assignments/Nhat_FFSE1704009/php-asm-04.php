@@ -91,8 +91,7 @@ if(isset($_POST['submit'])){
     $gender=$_POST['gender'];
     $favorite=$_POST['favorite'];
    
-            $name = $_FILES['avatar']['name'];
-        	
+            $name = $_FILES['avatar']['name'];        	
         	$arname = explode('.', $name);
         	$duoifile = end($arname);
         	$newname = time();

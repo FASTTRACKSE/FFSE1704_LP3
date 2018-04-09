@@ -43,7 +43,7 @@ if(isset($_POST['post'])){
 		</tr>
 		<tr>
 			<td width="111"><strong>Tên Đăng Nhập</strong></td>
-			<td width="379"><input type="text" name="name" value="<?=$arus['user_name']?>" required></td>
+			<td width="379"><input type="text" name="name" readonly="true"	 value="<?=$arus['user_name']?>" required></td>
 			
 		</tr>
 		<tr>

@@ -1,0 +1,4 @@
+4 - SELECT * FROM `sinhvien` WHERE `age`>19 AND `gender`= 'N?'
+5 - SELECT * FROM `sinhvien` WHERE name LIKE N'% Nam'
+6 - SELECT COUNT(*) FROM sinhvien WHERE class = 'FFSE1701'
+7 - DELETE FROM sinhvien WHERE age < 18

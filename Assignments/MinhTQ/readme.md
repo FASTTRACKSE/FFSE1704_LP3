@@ -11,4 +11,6 @@
 6. assigment 4: [ Bài4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/MinhTQ/php-asms-04.php)<br>
                       (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/MinhTQ/php-asms-04b.php)<br>
 7. assigment 7: [ Bài7] (https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/MinhTQ/php-asm-07.php)
-8. assigment 8: [ Bài8] (https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/MinhTQ/php-asm-08)                     
+8. assigment 8: [ Bài8] (https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/MinhTQ/php-asm-08)
+9. assigment 9: [ Bài9] (https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/MinhTQ/ffse1704006_LP3/application/views/homeview) 
+(https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/MinhTQ/ffse1704006_LP3/application/views/userview)                     

@@ -14,6 +14,10 @@
 6. Assigment 6: [bai6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/assgnment6.txt)<br>	
 7. Assigment 7: [bai7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/assgnment7.txt)<br>	
 8. Assigment 8: [bai8](https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/NghiaTD/php-asm-8)<br>
-				
-
+9. Assigment 9:	1.Controller [bai9 home](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/controllers/admin/Home.php)<br>
+			[bai9 user](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/controllers/admin/user.php)<br>
+	2.views [bai9 home]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/home/index.php)<br>
+			[bai9 user-add]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/user/add.php)<br>
+			[bai9 user-index]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/user/index.php)<br>
+			
 

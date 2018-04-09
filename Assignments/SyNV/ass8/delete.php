@@ -7,7 +7,7 @@
 		<?php
 			if (isset($_POST['submit'])) {
 				require_once('libaries.php');
-				$mysqli = connectDB('localhost','mido','0933237480','ffse1704002');
+				$mysqli = connectDB('localhost','occhoisreal','123456','ffse1702028');
 
 				$id = $_GET['id'];
 				$sql = "DELETE FROM lms_users WHERE user_id = $id";

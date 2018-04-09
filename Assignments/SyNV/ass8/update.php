@@ -15,7 +15,7 @@
 				$id = $_POST['id'];
 
 				require_once('libaries.php');
-				$mysqli = connectDB('localhost','mido','0933237480','ffse1704002');
+				$mysqli = connectDB('localhost','occhoisreal','123456','ffse1702028');
 
 				//thực thi các câu lệnh truy vấn tại đây
 				$SQL = "UPDATE lms_users SET user_fullname='$fullname',user_email='$email', user_password='$password' WHERE user_id = $id";

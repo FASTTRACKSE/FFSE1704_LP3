@@ -19,7 +19,7 @@
 			<div>
 				<?php
 					require_once('libaries.php');
-					$mysqli = connectDB('localhost','mido','0933237480','ffse1704002');
+					$mysqli = connectDB('localhost','occhoisreal','123456','ffse1702028');
 
 					//thực thi các câu lệnh truy vấn tại đây
 					$sql = "SELECT * FROM lms_users";

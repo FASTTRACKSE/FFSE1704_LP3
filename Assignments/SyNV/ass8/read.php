@@ -9,7 +9,7 @@
 	<body>
 		<?php
 			require_once('libaries.php');
-			$mysqli = connectDB('localhost','mido','0933237480','ffse1704002');
+			$mysqli = connectDB('localhost','occhoisreal','123456','ffse1702028');
 
 			$id = $_GET['id'];
 			$sql = "SELECT * FROM lms_users WHERE user_id=$id";

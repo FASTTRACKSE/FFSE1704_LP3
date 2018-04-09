@@ -9,7 +9,7 @@
 	if(isset($_POST['submit'])){
 		
 		$name = $_POST['fullname'];
-		$email=$_POST['email'];
+		$email=$_POST['email'];  
 		if($_POST['password']!=''){
 			$password = $_POST['password'];
 		}else{

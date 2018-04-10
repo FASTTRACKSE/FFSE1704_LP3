@@ -9,7 +9,7 @@
 <body>
 	<?php
 		require_once('libaries.php');		
-		$per_page=5 	;
+		$per_page=5;
 		if(isset($_GET['page'])){
 			$page = $_GET['page'];
 			if($page<0){

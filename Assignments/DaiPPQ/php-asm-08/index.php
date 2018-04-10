@@ -48,7 +48,7 @@
 								<span class="glyphicon glyphicon-eye-open" style="padding: 10px"></span>
 							</a>
 
-							<a href="http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-08/update.php?id=<?=$arUsers['user_id'] ?>?name=<$arUsers['user_id'] ?>">
+							<a href="http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-08/update.php?id=<?=$arUsers['user_id'] ?>&name=<$arUsers['user_name'] ?>">
 								<span class="glyphicon glyphicon-pencil" style="padding: 10px"></span>
 							</a>
 
@@ -61,6 +61,12 @@
 					}
 				?>
 				</table>
+
+				<?php
+					$cou = "SELECT COUNT(*) FROM `lms_users`";
+					$result = $mysqli->query($cou);
+				?>
+				
 				<?php
 					//đống kết nối
 					$mysqli -> close();

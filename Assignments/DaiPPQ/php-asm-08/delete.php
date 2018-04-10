@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title></title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
 		<?php
@@ -19,19 +21,23 @@
 				$mysqli -> close();
 			}
 		?>
-		
-		<h1 style=" margin-left: 375px;">Delete User</h1>
- 		<hr style="width: 50%; margin: auto;">
-		<form  method="POST"  style="width: 50%; margin: auto; background-color:#FFC0CB; ">
-			<small id="emailHelp" class="form-text text-muted" style="font-size: 20px;margin: 25px;padding-top: 25px;">Are you sure you want to delete this user ?</small><br>
-			<table>
-				<div>
-					<button type="submit" name="submit" class="btn btn-primary" style="margin: 30px;">Yes</button>  
-            		<a href="index.php">
-						<button type="button" class="btn btn-primary">No</button>
-					</a>
-        		</div>
-			</table>		
-		</form>
+		<div style="width: 30%; margin: auto;">
+			<div>
+				<h1>Delete User</h1>
+			</div>
+			<div class="bg-warning">
+				<form  method="POST">
+					<p  style="margin: 20px; color: red;">Are you sure you want to delete this user ?</p>
+					<table>
+						<div>
+							<button type="submit" name="submit" class="btn btn-default" style="margin: 20px;">Yes</button>  
+		            		<a href="index.php">
+								<button type="button" class="btn btn-default">No</button>
+							</a>
+		        		</div>
+					</table>		
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

@@ -52,7 +52,7 @@ Assignment 08:
 
 
 Codeigniter :
-[Bài tập ]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/Battap-Codeigniter.php
+[Bài tập ](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/Battap-Codeigniter.php)
 
 
 

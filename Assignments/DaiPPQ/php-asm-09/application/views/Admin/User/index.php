@@ -45,7 +45,7 @@
                                         <td>ffse1701001</td>
                                         <td>No name</td>
                                         <td class="center">
-                                            <img src="assets/img/1.png" alt="" height="80px" width="100px" />
+                                            <img src="<?=base_url()?>assets/img/1.png" alt="" height="80px" width="100px" />
                                         </td>
                                         <td class="center">
                                             <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
@@ -57,7 +57,7 @@
                                         <td>ffse1701002</td>
                                         <td>No name</td>
                                         <td class="center">
-                                            <img src="assets/img/1.png" alt="" height="80px" width="100px" />
+                                            <img src="<?=base_url()?>assets/img/1.png" alt="" height="80px" width="100px" />
                                         </td>
                                         <td class="center">
                                             <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
@@ -69,7 +69,7 @@
                                         <td>ffse1701003</td>
                                         <td>No name</td>
                                         <td class="center">
-                                            <img src="assets/img/1.png" alt="" height="80px" width="100px" />
+                                            <img src="<?=base_url()?>assets/img/1.png" alt="" height="80px" width="100px" />
                                         </td>
                                         <td class="center">
                                             <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>

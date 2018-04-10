@@ -45,7 +45,7 @@ $result=$mysqli->query($sql);
 		<td>
 			<a href="http://localhost/ffse1701005/xem.php?id=<?=$ar['user_id'] ?>" class="glyphicon glyphicon-eye-open"></a>
 			<a href="http://localhost/ffse1701005/sua.php?id=<?=$ar['user_id'] ?>" class="glyphicon glyphicon-pencil"></a>
-			<a href="http://localhost/ffse1701005/delete1.php?id=<?=$ar['user_id'] ?>" class="	glyphicon glyphicon-trash"></a>
+			<a href="http://http://localhost/ffse1704_lp3/Assignments/XuanKy/delete1.php?id=<?=$ar['user_id'] ?>" class="	glyphicon glyphicon-trash"></a>
 		</td>
 	</tr>
 	<?php } ?>

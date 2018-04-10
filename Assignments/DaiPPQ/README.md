@@ -17,3 +17,12 @@
 9. Quiz: [Quiz-30/3](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/Quiz.xls)
 10. Assigment 8:[mysql-asm4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-08/ffse1704002_mysql_04.sql)<br>
 		[mysql-asm4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-08/index.php)
+11.	Assigment 9:<br>
+	[Admin-Home](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/controllers/Admin/Home.php)<br>
+	[Admin-User](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/controllers/Admin/User.php)<br>
+	[header](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/views/Templates/Admin/header.php)<br>
+	[footer](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/views/Templates/Admin/footer.php)<br>
+	[Home-index](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/views/Admin/Home/index.php)<br>
+	[User-index](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/views/Admin/User/index.php)<br>
+	[User-add](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-09/application/views/Admin/User/add.php)
+	

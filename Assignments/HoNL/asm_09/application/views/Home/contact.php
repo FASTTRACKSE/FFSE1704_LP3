@@ -1,0 +1,1 @@
+<h1 style="color: #D2691E;">Senju Hashirama</h1>

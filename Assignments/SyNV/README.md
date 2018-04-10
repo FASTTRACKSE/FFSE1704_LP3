@@ -20,4 +20,7 @@
 6.Assigment 7:
 [Bài 7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass7/ass7-bt7.txt)
 7.Assigment 8:
-[Bài 7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass8/ass8-bt8.sql)
+[Bài 8](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass8/ass8-bt8.sql)
+8.Assigment 9:
+[Bài 9](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SyNV/ass9/application/controllers/Admin/Home.php)
+

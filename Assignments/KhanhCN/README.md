@@ -51,6 +51,10 @@ Assignment 08:
 [File 7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/asm-08-delete.php)
 
 
+Codeigniter :
+[Bài tập ]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/KhanhCN/Battap-Codeigniter.php
+
+
 
 
 

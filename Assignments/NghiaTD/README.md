@@ -19,5 +19,10 @@
 	2.views [bai9 home]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/home/index.php)<br>
 			[bai9 user-add]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/user/add.php)<br>
 			[bai9 user-index]https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-9/application/views/admin/user/index.php)<br>
-			
+10. Assigment 10: [bai10 câu 4](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-10/application/controllers/admin/user.php)<br>
+				[bai10 câu 5](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-10/application/views/admin/user/create.php)<br>
+				[bai10 câu 6](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-10/application/views/admin/user/read.php)<br>
+				[bai10 câu 7](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-10/application/views/admin/user/update.php)<br>
+				[bai10 câu 8](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/NghiaTD/php-asm-10/application/views/admin/user/delete.php)<br>
+
 

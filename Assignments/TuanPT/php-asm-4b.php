@@ -26,9 +26,6 @@
         <td>  <?= $value['address'] ?> </td>
         <td> <a href="">Xóa </a> </td>
     </tr>
-        echo "<pre>";
-        print_r $_SESSION;
-        echo"</pre>";
     <?php } ?>
 
 

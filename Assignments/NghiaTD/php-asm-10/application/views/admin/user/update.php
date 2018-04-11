@@ -51,7 +51,7 @@ if(isset($_POST['post'])){
 		</tr>
 		<tr>
 			<td width="111"><strong>Tên Đăng Nhập</strong></td>
-			<td width="379"><input type="text" name="name" readonly="true"	 value="<?=$arus['user_name']?>" disabled></td>
+			<td width="379"><input type="text" name="name" readonly="true"	 value="<?=$arus['user_name']?>" ></td>
 			
 		</tr>
 		<tr>
@@ -60,8 +60,8 @@ if(isset($_POST['post'])){
 			
 		</tr>
 		<tr>
-			<td width="111"><strong>Họ và tên</strong></td>
-			<td width="379"><input type="text" name="hoten" required></td>
+			<td width="111"><strong>email</strong></td>
+			<td width="379"><input type="email" name="hoten" required></td>
 			
 		</tr>
 		<tr>

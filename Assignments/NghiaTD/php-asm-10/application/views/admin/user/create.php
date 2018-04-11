@@ -26,7 +26,7 @@
 	echo "<pre>";
 	print_r($sql);
 	echo "</pre>";
-	header("location: php-asm-8b.php");
+	redirect('admin/user/index');
 		}
 
 	

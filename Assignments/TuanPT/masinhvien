@@ -28,8 +28,9 @@ ON lms_students.province=lms_vietnam.id
 INNER JOIN lms_countries AS A
 ON lms_students.nationality = A.id
 ORDER BY code DESC LIMIT 5
+
 1NC:
-SELECT lms_students.code,lms_students.birth_day,lms_students.birth_month,lms_students.birth_year,lms_students.first_name,lms_vietnam.name AS province,lms_countries.name AS country,A.name AS nationality
+SELECT lms_students.code,lms_students.first_name,lms_vietnam.name AS province,lms_countries.name AS country,A.name AS nationality
 FROM lms_students
 INNER JOIN lms_countries
 ON lms_students.country=lms_countries.id

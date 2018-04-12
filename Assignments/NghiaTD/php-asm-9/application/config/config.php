@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'C:\xampp\htdocs\FFSE1704_LP3\Assignments\NghiaTD\php-asm-9';
+$config['base_url'] = 'http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-9';
 
 /*
 |--------------------------------------------------------------------------

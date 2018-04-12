@@ -30,7 +30,7 @@
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Xin chào, <b>Admin</b> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Đăng xuất</a> </div>
+font-size: 16px;"> Xin chào, <b>Admin</b> &nbsp; <a href="<?=base_url()?>index.php/admin/user/do_logout" class="btn btn-danger square-btn-adjust">Đăng xuất</a> </div>
         </nav>
         <!-- /. NAV TOP  --><nav class="navbar-default navbar-side" role="navigation">
     <div class="sidebar-collapse">

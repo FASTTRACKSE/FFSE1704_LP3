@@ -8,7 +8,7 @@
 </head>
 <body>
 	<?php 
-require_once('php-asm-8a.php');
+require_once('themknoi.php');
 $mysqli=connectDB('localhost','nghia123','123456','hoc_sinh');
 $sql="SELECT * FROM lms_users";
 

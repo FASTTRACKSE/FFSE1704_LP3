@@ -8,3 +8,4 @@ FFSE1704's Assignments Repository
 6. Assignment 9: [Codeigniter][Controller]  ----(https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/ToanNT/Assignment%209%20(Codeigniter)/Controller/Admin)
 											|
 							  [View]		----(https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/ToanNT/Assignment%209%20(Codeigniter)/Views/Admin)
+7. Assignment 10:[Codeigniter](https://github.com/FASTTRACKSE/FFSE1704_LP3/tree/master/Assignments/ToanNT/Assignment%2010%20(Codeigniter)/ffse1703012)

@@ -10,7 +10,7 @@
 			$this->load->view('templates/admin/footer');
 		}
 		public function info(){
-
+			
 		}
 	}
 ?>

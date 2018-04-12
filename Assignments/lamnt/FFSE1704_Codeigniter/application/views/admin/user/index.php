@@ -13,6 +13,7 @@
 
     <!-- Main content -->
     <section class="content">
+      <?=$this->session->msg?>
       <div class="row">
         <div class="col-12">
          

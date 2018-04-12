@@ -13,7 +13,8 @@
 
     <!-- Main content -->
     <section class="content">
-     
+     <?=validation_errors()?>
+     <?=$this->session->msg?>
      <!-- Basic Forms -->
       <div class="box box-default">
         <div class="box-header with-border">
@@ -29,7 +30,7 @@
         <div class="box-body">
           <div class="row">
             <div class="col">
-            	<form novalidate="" action="<?=base_url()?>index.php/admin/user/do_add" method="POST">
+            	<form novalidate="" action="" method="POST">
 					<div class="form-group">
 						<h5>Username <span class="text-danger">*</span></h5>
 						<div class="controls">
@@ -47,9 +48,9 @@
 							<input type="password" name="password" class="form-control" required="" data-validation-required-message="This field is required"> <div class="help-block"></div></div>
 					</div>
 					<div class="form-group">
-						<h5>Repeat Password Input Field <span class="text-danger">*</span></h5>
+						<h5>Fullname Field <span class="text-danger">*</span></h5>
 						<div class="controls">
-							<input type="password" name="password2" data-validation-match-match="password" class="form-control" required=""> <div class="help-block"></div></div>
+							<input type="text" name="fullname" data-validation-match-match="password" class="form-control" required=""> <div class="help-block"></div></div>
 					</div>
 					<div class="form-group">
 						<h5>File Input Field <span class="text-danger">*</span></h5>

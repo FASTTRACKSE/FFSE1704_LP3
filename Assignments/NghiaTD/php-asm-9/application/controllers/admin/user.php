@@ -1,54 +1,99 @@
 <?php 
-class user extends CI_controller{
-	public function index()
+class User extends CI_controller{
+	public function __construct()
 	{
+		parent::__construct();
+		$this->load->model('User_model');
+		$this->load->helper('url','form');
+		$this->load->library('form_validation');
+	}
+	public function index($cur_page=0)
+	{	
+		$this->load->library('pagination');
+		$config['base_url']=base_url('index.php/admin/user/index');
+
+		$config['total_rows']=$this->User_model->countItems();
+		// var_dump($config['total_rows']);die();
+		$config['per_page']=2;
+		$config['full_tag_open']='<ul class="pagination">';
+		$config['full_tag_close']='</ul>';
+		$config['num_tag_open']="<li>";
+		$config['num_tag_close']="</li>";
+		$config['cur_tag_open']="<li> <a>";
+		$config['cur_tag_close']="</li> </a>";
+		$config['next_link']="TIếp theo";
+		$config['next_tag_open']="<li>";
+		$config['next_tag_close']="</li>";
+		$config['prev_link']="Quay lại";
+		$config['prev_tag_open']="<li>";
+		$config['prev_tag_close']="</li>";
+		$config['last_link']="Cuối cùng";
+		$config['last_tag_open']="<li>";
+		$config['last_tag_close']="</li>";
+		$config['first_link']="Đầu tiên";
+		$config['first_tag_open']="<li>";
+		$config['first_tag_close']="</li>";
+
+
+
+
+
+
+
+		$items= $this->User_model->getAll($cur_page,$config['per_page']);
+		$data['items']=$items;
+		$this->pagination->initialize($config);
 		$this->load->view("templates/admin/header");
-		$this->load->view("admin/user/index");
+		$this->load->view("admin/user/index",$data);
 	
 		$this->load->view("templates/admin/footer");
 	}
-	public function add()
+	public function read($id="1")
 	{
+		$data['items']=$this->User_model->getItem($id);
+		$this->load->view('admin/user/read',$data);
+	}
+	public function them()
+	{
+	
+		$this->load->view('admin/user/them');
+	}
+	public function add()
+	{	
+		$this->form_validation->set_rules('username','Tài khoản','required');
+		if($this->form_validation->run()==FALSE){
+
 		$this->load->view("templates/admin/header");
 		$this->load->view("admin/user/add");
 	
 		$this->load->view("templates/admin/footer");
-	}
-	// public function read($username="admin",$password="123456"){
-	// 	$username = $this -> input -> post('username');
-	// 	$password = $this -> input -> post('password');
-
-	// 	$data['ten']=$username;
-	// 	$data['mk']=$password;
-	// 	$this->load->view("admin/user/read",$data);
-	// 	if($username = $this -> input -> post('username') && $password = $this -> input -> post('password')){
-	// 		$this->load->view("admin/user/read");
-	// 	}
-	// 	else {
-	// 		echo " đăng nhập thất bại";
-	// 	}
-	public function them(){
-		$this->load->view("templates/admin/header");
-		$this->load->view("admin/user/them");
-	
-		$this->load->view("templates/admin/footer");
-	}
-	public function do_add($username="",$password=""){
-		$username = $this -> input -> post('username').'<br>';
-		$password =  $this -> input -> post('password');
-		if ($this -> input -> post($username)=='admin' &&  $this -> input -> post($password)=='123456') {
-			echo 'Đăng nhập thành công';
+	}else {
+		$username= $this->input->post('username');
+		if ($this->User_model->checkUsername($username)>=1) {
+			$this->session->set_flashdata("msg",'Đã trùng username');
+			redirect("admin/user/add");
 		}
-		else {
-			echo "đăng nhập thất bại";
+		$password= $this->input->post('password');
+		$email = $this->input->post('email');
+		$fullname = $this->input->post('fullname');
+		$data=array(
+			'user_name'=>$username,
+			'user_password'=>$password,
+			'user_email'=>	$email,
+			'user_fullname'=>$fullname
+		);
+		$result = $this->User_model->addItem($data);
+	if($result){
+					$this->session->set_flashdata("msg",'Them thanh cong');
+					redirect("admin/user/index");
+				}else{
+					$this->session->set_flashdata("msg",'Them that bai');
+					// $this->load->view('templates/admin/header');
+					// $this->load->view('admin/user/add');
+					// $this->load->view("templates/admin/footer");
+				}
+			}
+			
 		}
-
 	}
-
-	}
-
-
-
-	 
-
 ?>

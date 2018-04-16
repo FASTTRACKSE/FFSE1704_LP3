@@ -14,7 +14,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <form role="form" action="" method="POST" enctype="multipart/form-data">
+                                <form role="form" action="<?= base_url()?>index.php/Admin/Users/read " method="POST" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Tên tài khoản</label>
                                         <input type="text" name="username" class="form-control" />
@@ -34,7 +34,7 @@
                                         <label>Ảnh đại diện</label>
                                         <input type="file" name="hinhanh" />
                                     </div>
-                                    <button type="submit" name="submit" class="btn btn-success btn-md">Thêm</button>
+                                    <input type="submit" name="submit" class="btn btn-success btn-md" value="Thêm">
                                 </form>
 
 

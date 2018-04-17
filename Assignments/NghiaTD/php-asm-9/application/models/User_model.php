@@ -35,7 +35,7 @@
       return $result;
     }
     public function editItem($data,$id){
-      $this->db->where($primaryKey, $id);
+      $this->db->where($this->primaryKey,$id);
       $result = $this->db->update( $this->table,$data);
       return $result;
     }
@@ -46,9 +46,24 @@
     }
     public function checkUsername($us){
       $this->db->where('user_name',$us);
+
       $result =$this->db->get($this->table);
       // echo $result->num_rows();die();
       return $result->num_rows();
+    }
+    public function getItem($id){
+      $this->db->where('user_id', $id);
+      $this->db->select('user_name');
+       $result =$this->db->get($this->table);
+       return $result->row_array();
+
+    }
+    public function search($name){
+      $this->db->like('user_name',$name);
+      $this->db->select('*');
+      $result =$this->db->get($this->table);
+      return $result->result_array();
+
     }
 }
 ?>

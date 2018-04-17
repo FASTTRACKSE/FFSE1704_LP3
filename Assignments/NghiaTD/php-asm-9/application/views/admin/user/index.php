@@ -23,7 +23,7 @@
                                 <div class="col-sm-6" style="text-align: right;">
                                     <form method="post" action="">
                                         <input type="submit" name="search" value="Tìm kiếm" class="btn btn-warning btn-sm" style="float:right" />
-                                        <input type="search" class="form-control input-sm" placeholder="Nhập họ tên" style="float:right; width: 300px;" />
+                                        <input type="search" name="sub" class="form-control input-sm" placeholder="Nhập họ tên" style="float:right; width: 300px;" />
                                         <div style="clear:both"></div>
                                     </form><br />
                                 </div>
@@ -47,7 +47,7 @@
                                     <td><a href="<?php echo base_url() ?>index.php/admin/user/add>"><?php echo $value['user_name']; ?></a></td>
                                     <td><?php echo $value['user_fullname']; ?></td>
                                     <td><?php echo $value['user_email']; ?></td>
-                                    <td><a href="" class="btn btn-primary">Sửa</a>
+                                    <td><a href="<?= base_url('index.php/admin/user/edit/').$value['user_id']?>" class="btn btn-primary">Sửa</a>
                                         <a href="" class="btn btn-danger">Xóa</a></td>
 
                                 </tr>

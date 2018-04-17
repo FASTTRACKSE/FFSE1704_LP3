@@ -1,3 +1,4 @@
+    
 <!-- /. NAV SIDE  --><div id="page-wrapper">
     <div id="page-inner">
         <div class="row">
@@ -11,6 +12,7 @@
             <div class="col-md-12">
                 <!-- Form Elements -->
                 <div class="panel panel-default">
+                    <?php echo $this->session->msg; ?>
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-12">
@@ -22,6 +24,14 @@
 									<div class="form-group">
                                         <label>Họ và tên </label>
                                         <input type="text" name="fullname" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pass word </label>
+                                        <input type="password" name="password" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" name="email" class="form-control" />
                                     </div>
 									<div class="form-group">
                                         <label>Phân quyền</label>

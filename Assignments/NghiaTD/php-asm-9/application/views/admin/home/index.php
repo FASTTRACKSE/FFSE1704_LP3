@@ -14,7 +14,7 @@
                     <i class="fa fa-bars"></i>
                 </span>
                     <div class="text-box">
-                        <p class="main-text"><a href="cat.html" title="">Quản lý danh mục</a></p>
+                        <p class="main-text"><a href="<?php echo base_url() ?>index.php/admin/user/index" title="">Quản lý danh mục</a></p>
                         <p class="text-muted">Có 4 danh mục</p>
                     </div>
                 </div>

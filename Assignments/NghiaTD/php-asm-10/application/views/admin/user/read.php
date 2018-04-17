@@ -23,9 +23,9 @@
 // 	$result=$mysqli->query($sql);
 
 $mysqli=connectDB('localhost','nghia111','123456','hoc_sinh');
-$id=$_GET['id'];
-$sql="SELECT * FROM lms_users WHERE user_id=$id";
-$rs=$mysqli->query($sql);
+	$id=$_GET['id'];
+	$sql="SELECT * FROM lms_users WHERE user_id=$id";
+	$rs=$mysqli->query($sql);
 $item=$rs->fetch_assoc();
 
 

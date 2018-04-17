@@ -14,6 +14,7 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="table-responsive">
+							<?php echo $this->pagination->create_links(); ?>
 							<div class="row">
 								<div class="col-sm-6">
 									<a href="add" class="btn btn-success btn-md" id="">
@@ -28,7 +29,6 @@
 									</form><br />
 								</div>
 							</div>
-
 							<table class="table table-striped table-bordered table-hover" id="dataTables-example">
 								<thead>
 									<tr>

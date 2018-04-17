@@ -5,6 +5,21 @@ class Users extends CI_Controller{
 		$this->load->model('Users_model');
 	}
 	public function index(){
+		$this->load->library('pagination');
+		$config['base_url']=base_url('index.php/admin/users/index');
+		$config['total_rows']=$this->Users_model->countItems();
+		$config['per_page']=2;
+		$config['full_tag_open']='<ul class="pagination">';
+		$config['full_tag_close']='</ul>';
+		/*$config['full_tag_open'] = '<li><a>';
+		$config['full_tag_close'] = '</a></li>';
+		$config['first_link'] = 'Lui';
+		$config['first_tag_open'] = '<div>';
+		$config['first_tag_close'] = '</div>';
+		$config['prev_link'] = 'Cuối Cùng';
+		$config['prev_tag_open'] = '<div>';
+		$config['prev_tag_close'] = '</div>';*/
+		$this->pagination->initialize($config);
 		$result['user']=$this->Users_model->getAll();
 		$this->load->view("Templates/users/header");
 		$this->load->view("Admin/users/index",$result);

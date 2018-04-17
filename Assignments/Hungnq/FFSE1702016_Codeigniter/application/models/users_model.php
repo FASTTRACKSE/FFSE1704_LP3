@@ -36,5 +36,10 @@
 			$result=$this->db->delete('lms_users');
 			return $result;
 		}
+		public function countItems(){
+			$sql="SELECT * FROM lms_users";
+			$result=$this->db->query($sql);
+			return $result->num_rows();
+		}
 	}
 ?>

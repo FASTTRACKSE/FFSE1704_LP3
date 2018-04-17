@@ -16,7 +16,7 @@
                         <div class="table-responsive">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a href="add.html" class="btn btn-success btn-md" id="">
+                                    <a href="<?php echo base_url() ?>index.php/admin/user/add" class="btn btn-success btn-md" id="">
                                         <i class="fa fa-plus"></i>&nbsp;Thêm
                                     </a>
                                 </div>
@@ -35,48 +35,23 @@
                                         <th>ID</th>
                                         <th>Tên tài khoản</th>
                                         <th>Họ và tên</th>
-                                        <th>Hình ảnh</th>
+                                        <th>Email</th>
                                         <th width="160px">Chức năng</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                                                        <tr class="odd gradeX">
-                                        <td>1</td>
-                                        <td>ffse1701001</td>
-                                        <td>No name</td>
-                                        <td class="center">
-                                            <img src="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-9/assets/img/1.png" alt="" height="80px" width="100px" />
-                                        </td>
-                                        <td class="center">
-                                            <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-                                            <a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
-                                        </td>
-                                    </tr>
-                                                                        <tr class="even gradeX">
-                                        <td>2</td>
-                                        <td>ffse1701002</td>
-                                        <td>No name</td>
-                                        <td class="center">
-                                            <img src="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-9/assets/img/1.png" alt="" height="80px" width="100px" />
-                                        </td>
-                                        <td class="center">
-                                            <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-                                            <a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
-                                        </td>
-                                    </tr>
-                                                                        <tr class="odd gradeX">
-                                        <td>3</td>
-                                        <td>ffse1701003</td>
-                                        <td>No name</td>
-                                        <td class="center">
-                                            <img src="http://localhost/FFSE1704_LP3/Assignments/NghiaTD/php-asm-9/assets/img/1.png" alt="" height="80px" width="100px" />
-                                        </td>
-                                        <td class="center">
-                                            <a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-                                            <a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
-                                        </td>
-                                    </tr>
-                                                                    </tbody>
+                                <?php foreach ($items as $value) {
+                                    
+                                 ?>
+                                <tr>
+                                    <td><?php echo $value['user_id']; ?></td>
+                                    <td><a href="<?php echo base_url() ?>index.php/admin/user/add>"><?php echo $value['user_name']; ?></a></td>
+                                    <td><?php echo $value['user_fullname']; ?></td>
+                                    <td><?php echo $value['user_email']; ?></td>
+                                    <td><a href="" class="btn btn-primary">Sửa</a>
+                                        <a href="" class="btn btn-danger">Xóa</a></td>
+
+                                </tr>
+                                <?php } ?>
                             </table>
                             <div class="row">
                                 <div class="col-sm-6">
@@ -84,15 +59,7 @@
                                 </div>
                                 <div class="col-sm-6" style="text-align: right;">
                                     <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
-                                        <ul class="pagination">
-                                            <li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#">Trang trước</a></li>
-                                            <li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>
-                                            <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li>
-                                            <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li>
-                                            <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li>
-                                            <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>
-                                            <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">Trang tiếp</a></li>
-                                        </ul>
+                                     <?php  echo $this->pagination->create_links(); ?>  
                                     </div>
                                 </div>
                             </div>

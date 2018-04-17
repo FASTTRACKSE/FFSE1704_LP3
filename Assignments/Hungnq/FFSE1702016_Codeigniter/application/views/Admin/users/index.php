@@ -32,51 +32,28 @@
 							<table class="table table-striped table-bordered table-hover" id="dataTables-example">
 								<thead>
 									<tr>
-										<th>ID</th>
-										<th>Tên tài khoản</th>
-										<th>Họ và tên</th>
-										<th>Hình ảnh</th>
-										<th width="160px">Chức năng</th>
+										<td>ID</td>
+										<td>Name</td>
+										<td>Fullname</td>
+										<td>Email</td>
+										<td>Action</td>
 									</tr>
 								</thead>
+						<?php foreach ($user as $value) { ?>
 								<tbody>
 									<tr class="odd gradeX">
-										<td>1</td>
-										<td>ffse1701001</td>
-										<td>No name</td>
+										<td><?=$value['user_id'] ?></td>
+										<td><?=$value['user_name'] ?></td>
+										<td><?=$value['user_fullname'] ?></td>
+										<td><?=$value['user_email'] ?></td>
 										<td class="center">
-											<img src="<?=base_url('assets/img/')?>1.png" alt="" height="80px" width="100px" />
-										</td>
-										<td class="center">
-											<a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-											<a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
-										</td>
-									</tr>
-									<tr class="even gradeX">
-										<td>2</td>
-										<td>ffse1701002</td>
-										<td>No name</td>
-										<td class="center">
-											<img src="<?=base_url('assets/img/')?>1.png" alt="" height="80px" width="100px" />
-										</td>
-										<td class="center">
-											<a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-											<a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
-										</td>
-									</tr>
-									<tr class="odd gradeX">
-										<td>3</td>
-										<td>ffse1701003</td>
-										<td>No name</td>
-										<td class="center">
-											<img src="<?=base_url('assets/img/')?>1.png" alt="" height="80px" width="100px" />
-										</td>
-										<td class="center">
-											<a href="" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
-											<a href="" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
+											<a href="edit/<?= $value['user_id'] ?>" title="" class="btn btn-primary"><i class="fa fa-edit "></i> Sửa</a>
+											<a href="info/<?= $value['user_id'] ?>" title="" class="btn btn-primary"><i class="fa fa-eye "></i> Xem</a>
+											<a href="delete/<?= $value['user_id'] ?>" title="" class="btn btn-danger"><i class="fa fa-pencil"></i> Xóa</a>
 										</td>
 									</tr>
 								</tbody>
+								<?php } ?>
 							</table>
 							<div class="row">
 								<div class="col-sm-6">

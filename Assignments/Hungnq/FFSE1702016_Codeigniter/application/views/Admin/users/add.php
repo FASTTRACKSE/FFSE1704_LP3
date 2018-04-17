@@ -17,26 +17,29 @@
                                 <form role="form" action="" method="POST" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Tên tài khoản</label>
-                                        <input type="text" name="username" class="form-control" />
+                                        <input type="text" name="user_name" class="form-control" />
                                     </div>
 									<div class="form-group">
                                         <label>Họ và tên </label>
-                                        <input type="text" name="fullname" class="form-control" />
+                                        <input type="text" name="user_fullname" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email </label>
+                                        <input type="text" name="user_email" class="form-control" />
                                     </div>
 									<div class="form-group">
-                                        <label>Phân quyền</label>
-                                        <select class="form-control">
-                                                <option value='1'>Administator</option>
-                                                <option value='2'>Author</option>
-										</select>
+                                        <label>Mật Khẩu </label>
+                                        <input type="text" name="user_password" class="form-control" />
                                     </div>
                                     <div class="form-group">
                                         <label>Ảnh đại diện</label>
                                         <input type="file" name="hinhanh" />
                                     </div>
-                                    <button type="submit" name="submit" class="btn btn-success btn-md">Thêm</button>
+                                    <input type="submit" name="submit">
                                 </form>
-
+                                <?php
+                                echo validation_errors();
+                                ?>
 
 
                             </div>

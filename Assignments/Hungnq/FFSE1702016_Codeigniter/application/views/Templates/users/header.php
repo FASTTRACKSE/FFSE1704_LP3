@@ -30,7 +30,7 @@
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Xin chào, <b>Admin</b> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Đăng xuất</a> </div>
+font-size: 16px;"> Xin chào, <b>Admin</b> &nbsp; <a href="<?=base_url("index.php/login/index")?>" class="btn btn-danger square-btn-adjust">Đăng xuất</a> </div>
         </nav>
         <!-- /. NAV TOP  --><nav class="navbar-default navbar-side" role="navigation">
     <div class="sidebar-collapse">
@@ -40,13 +40,13 @@ font-size: 16px;"> Xin chào, <b>Admin</b> &nbsp; <a href="#" class="btn btn-dan
             </li>
 
             <li>
-                <a class="active-menu" href="index"><i class="fa fa-dashboard fa-3x"></i> Trang chủ</a>
+                <a href="<?=base_url("index.php/admin/home/index")?>"><i class="fa fa-dashboard fa-3x"></i> Trang chủ</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-list fa-3x"></i> Quản lý danh mục</a>
+                <a href="<?=base_url("index.php/admin/home/index")?>"><i class="fa fa-list fa-3x"></i> Quản lý danh mục</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-user fa-3x"></i> Quản lý người dùng</a>
+                <a href="<?=base_url("index.php/admin/users/index")?>"><i class="fa fa-user fa-3x"></i> Quản lý người dùng</a>
             </li>
         </ul>
     </div>

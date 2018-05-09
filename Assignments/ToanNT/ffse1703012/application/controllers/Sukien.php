@@ -7,6 +7,9 @@ class Sukien extends MY_Controller{
     $this->load->library('form_validation');
     $this->load->model("Sukien_model");
   } 
+publlic function back{
+	$this->load->view('user_sukien/index');
+}
    public function test()
     {
       $this->load->view('thongtinsukien');

@@ -9,7 +9,7 @@ class Sukien extends MY_Controller{
   } 
    public function test()
     {
-      $this->load->view('Events');
+      $this->load->view('thongtinsukien');
     }
   public function index()
   {
@@ -89,7 +89,7 @@ class Sukien extends MY_Controller{
       $this->form_validation->set_rules("noi_dung", "Noi dung", "required");
       $this->form_validation->set_rules("mo_ta", "mota", "required");
       if ($this->form_validation->run() == TRUE) {
-        $this->db->insert("ffse1703012_baiviet", $data);
+        $this->db->insert("ffse1703012_sukien", $data);
         redirect('sukien/index');
       }
     }
@@ -137,7 +137,7 @@ class Sukien extends MY_Controller{
   {
     $data = $this->Sukien_model->get_baiviet($id);
 
-    if(isset($data['id']))
+    if(isset($data['ID']))
     {
       $this->Sukien_model->delete_baiviet($id);
       redirect('sukien/index');
@@ -146,6 +146,45 @@ class Sukien extends MY_Controller{
       show_error('Bài viết bạn muốn xóa không tồn tại.');
     }
 }
-}
+ public function sukien1()
+  {
+    $data['event']= $this->Sukien_model->sukien();
+    $data['list']= $this->Sukien_model->noibat();
+    $this->load->view('Events', $data);
+  }
 
+ public function get_events()
+ {
+     // Our Start and End Dates
+     $start = $this->input->get("start");
+     $end = $this->input->get("end");
+
+     $startdt = new DateTime('now'); // setup a local datetime
+     $startdt->setTimestamp($start); // Set the date based on timestamp
+     $start_format = $startdt->format('Y-m-d');
+
+     $enddt = new DateTime('now'); // setup a local datetime
+     $enddt->setTimestamp($end); // Set the date based on timestamp
+     $end_format = $enddt->format('Y-m-d');
+
+     $events = $this->Sukien_model->get_events($start_format, $end_format);
+
+     $data_events = array();
+
+     foreach($events->result() as $r) {
+
+         $data_events[] = array(
+             "id" => $r->ID,
+             "title" => $r->title,
+             "description" => $r->description,
+             "end" => $r->end,
+             "start" => $r->start
+         );
+     }
+
+     echo json_encode(array("events" => $data_events));
+     exit();
+ }
+
+}
 ?>

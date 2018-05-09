@@ -66,13 +66,13 @@
 
 
                         <div class="clearfix"></div>
-                        <table class="table table-bordered" style="margin-top:20px;">
+                        <table class="table table-bordered" style="margin-top:20px;" width="360">
                             <tr class="bg-info" >
                                 <td>STT</td>
                                 <td>Ngày bắt đầu</td>
                                 <td>Ngày kết thúc</td>
                                 <td>Tiêu đề</td>
-                                <td >Nội dung</td>
+                                <td width="50" height="20">Nội dung</td>
                                 <td>Hình ảnh</td>
                                 <td >Mô Tả</td>
                                 <td>Tác vụ</td>
@@ -86,13 +86,13 @@
                                 <td><?php echo $u['start']; ?></td>
                                 <td><?php echo $u['end']; ?></td>
                                 <td><?php echo $u['title']; ?></td>
-                                <td  ><?php echo $u['noi_dung']; ?></td>
+                                <td width="50" height="20" ><?php echo $u['noi_dung']; ?></td>
                                 <td><img src="<?=base_url()?>upload/<?= $u['hinh_anh']; ?>" width="80px" height="80px" ></td>
                                 <td  ><?php echo $u['description']; ?></td>
 
                                 <td>
-                                    <a href="<?php echo site_url('sukien/edit/'.$u['id']); ?>" class="btn btn-info btn-xs">Sửa</a> 
-                                    <a href="<?php echo site_url('sukien/remove/'.$u['id']); ?>"  onclick="return confirm('Bạn có chắc chắn muốn xóa mục này?')" class="btn btn-danger btn-xs">Xóa</a>
+                                    <a href="<?php echo site_url('sukien/edit/'.$u['ID']); ?>" class="btn btn-info btn-xs">Sửa</a> 
+                                    <a href="<?php echo site_url('sukien/remove/'.$u['ID']); ?>"  onclick="return confirm('Bạn có chắc chắn muốn xóa mục này?')" class="btn btn-danger btn-xs">Xóa</a>
                                 </td>
 
                             </tr>

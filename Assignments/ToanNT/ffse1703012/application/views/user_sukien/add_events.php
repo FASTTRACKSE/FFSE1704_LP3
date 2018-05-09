@@ -13,6 +13,27 @@
   <link href="<?php echo base_url();?>assets/css/custom.css" rel="stylesheet" />
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+  <script>
+ 
+//   $(document).ready(function(){
+//     $("#datepicker").each(function() {
+//         $(this).datepicker();
+//     });
+// });
+ // $(function() {
+ //      $( "#datepicker" ).datepicker({ minDate: -100, maxDate: "+0D" });
+ //      $("#datepicker").datepicker("setDate",new Date());
+ //      $( "#datepicker" ).datepicker( "option", "dateFormat", "dd/mm/yy");
+ //    });
+  </script>
 </head>
 
 <body>
@@ -62,11 +83,12 @@
                 <table class="table">
                   <tr>
                     <td><P>Ngày bắt đầu</p></td>
-                      <td><input type="text" name="bat_dau" class="form-control"></td>
+                      <td><p> <input name="bat_dau" type="text" id="datepicker"></p>
+</td>
                     </tr>
                     <tr>
                       <td><P>Ngày kết thúc</p></td>
-                        <td><input type="text" name="ket_thuc" class="form-control"></td>
+                        <td><p> <input name="ket_thuc" type="text" id="datepicker2"></p></td>
                       </tr>
                       <tr>
                         <td><P>Tiêu đề bài viết</p></td>
@@ -105,6 +127,7 @@
                  <!-- /. PAGE WRAPPER  -->
                </div>
              </div>
+
              <!-- /. WRAPPER  -->
              <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
              <!-- JQUERY SCRIPTS -->
@@ -115,7 +138,18 @@
              <script src="<?php echo base_url();?>assets/js/jquery.metisMenu.js"></script>
              <!-- CUSTOM SCRIPTS -->
              <script src="<?php echo base_url();?>assets/js/custom.js"></script>
-
+             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+              <script>
+                 $( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  } );
+              </script>
+              <script>
+                 $( function() {
+    $( "#datepicker2" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  } );
+              </script>
 
            </body>
 

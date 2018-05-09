@@ -57,7 +57,7 @@
                             <h2 class="text-center">Sửa bài viết</h2>
                         </div>
                         <div class="clearfix"></div>
-                        <form role="form" action="<?=base_url('index.php/sukien/update/'.$user['id']) ?>" method="POST" enctype="multipart/form-data">
+                        <form role="form" action="<?=base_url('index.php/sukien/update/'.$user['ID']) ?>" method="POST" enctype="multipart/form-data">
                             <div class="form">
                                 <table class="table">
                                   <tr>

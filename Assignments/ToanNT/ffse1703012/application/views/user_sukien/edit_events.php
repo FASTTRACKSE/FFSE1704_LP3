@@ -62,11 +62,11 @@
                                 <table class="table">
                                   <tr>
                                     <td><P>Ngày bắt đầu</p></td>
-                                    <td><input type="text" name="bat_dau" value="<?=$user['start']?>" class="form-control"></td>
+                                    <td><input type="text" name="bat_dau" value="<?=$user['start']?>" class="form-control" id="datepicker"></td>
                                   </tr>
                                   <tr>
                                     <td><P>Ngày kết thúc</p></td>
-                                    <td><input type="text" name="ket_thuc" value="<?=$user['end']?>" class="form-control"></td>
+                                    <td><input type="text" name="ket_thuc" value="<?=$user['end']?>" class="form-control" id="datepicker2"></td>
                                   </tr>
                                   <tr>
                                     <td><P>Tiêu đề bài viết</p></td>
@@ -109,6 +109,19 @@
     <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/jquery.metisMenu.js"></script>
     <script src="<?php echo base_url();?>assets/js/custom.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+              <script>
+                 $( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  } );
+              </script>
+              <script>
+                 $( function() {
+    $( "#datepicker2" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  } );
+              </script>
+
 
 
 </body>

@@ -1,14 +1,10 @@
 <?php 
 	session_start();
-  
+ 
 	if(isset($_POST['submit'])){
 		$namefile='avatar';
-		$username= $_POST['username'];
-		$password=$_POST['password'];
-		$fullname=$_POST['fullname'];
-		$address=$_POST['address'];
-		$gender=$_POST['gender'];
-		$favorite=$_POST['favorite'];
+		
+		
    
 		$name = $_FILES['avatar']['name'];
         	
